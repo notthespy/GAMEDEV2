@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\Player_Battle_Temp_Sprite</sprite>
     <sprite>sprites\Battle_Box_Sprite_Temp</sprite>
+    <sprite>sprites\Select_Arrow_Temp_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>

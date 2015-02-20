@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>Select_Position=0
 allow_runaway=0
+player=instance_create(700,300,Player_Battle_Object)
+boss=instance_create(100,220,Boss_Battle_Object)
+Menu_Depth=0
+Menu_Instance[0]="BASE"
+Is_Pressed=0
 </string>
           </argument>
         </arguments>
@@ -65,20 +70,57 @@ allow_runaway=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(100,450,"FIGHT!")
-draw_text(100,500,"BAG!")
-draw_text(100,550,"RUN!")
-if(Select_Position==0){
-    draw_sprite(Select_Arrow_Temp_Sprite,0,75,450)
+            <string>playerhealth=string(player.Current_HP)+"/"+string(player.Max_HP)
+draw_text(650,200,playerhealth)
+bosshealth=string(boss.Current_HP)+"/"+string(boss.Max_HP)
+draw_text(100,200,bosshealth)
+if(Menu_Depth&gt;=0){
+    draw_text(100,450,"FIGHT!")
+    draw_text(100,500,"BAG!")
+    draw_text(100,550,"RUN!")
 }
-if(Select_Position==1){
-    draw_sprite(Select_Arrow_Temp_Sprite,0,75,500)
+if(Menu_Depth=0){
+    if(Select_Position==0){
+        draw_sprite(Select_Arrow_Temp_Sprite,0,75,450)
+    }
+    if(Select_Position==1){
+        draw_sprite(Select_Arrow_Temp_Sprite,0,75,500)
+    }
+    if(Select_Position==2){
+        draw_sprite(Select_Arrow_Temp_Sprite,0,75,550)
+    }
+    if(allow_runaway=1){
+        draw_text(100,100,"AND YOU BRAVELY RAN AWAY")
+    }
 }
-if(Select_Position==2){
-    draw_sprite(Select_Arrow_Temp_Sprite,0,75,550)
+if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
+    draw_text(250,450,player.Attacks)
+    draw_sprite(Select_Arrow_Temp_Sprite,0,225,450)
 }
-if(allow_runaway=1){
-    draw_text(100,100,"AND YOU BRAVELY RAN AWAY")
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="81">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(Menu_Depth&gt;0){
+    Menu_Depth--
 }
 </string>
           </argument>
@@ -156,10 +198,29 @@ if(allow_runaway=1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Select_Position==2){
-    allow_runaway=1
-    alarm[0]=30
+            <string>if(Is_Pressed=0){
+    if(Menu_Depth==0){
+        if(Select_Position==0){
+            Menu_Depth+=1
+            Select_Position=0
+            Menu_Instance[1]="ATTACK"
+            exit
+        }
+        if(Select_Position==2){
+            allow_runaway=1
+            alarm[0]=30
+            exit
+        }
+    }
+    if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
+        Menu_Depth=0
+        Select_Position=0
+        boss.Current_HP-=player.Damage
+        exit
+    }
+    Is_Pressed=1
 }
+
 </string>
           </argument>
         </arguments>
@@ -179,6 +240,29 @@ if(allow_runaway=1){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="10" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Is_Pressed=0
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

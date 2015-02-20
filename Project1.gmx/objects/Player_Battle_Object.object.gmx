@@ -29,6 +29,8 @@
 Max_HP=10
 Attacks="Punch"
 Damage=2
+Items="Health Potion"
+Healing=5
 </string>
           </argument>
         </arguments>

@@ -22,11 +22,8 @@
     <object>objects\Player_Battle_Object</object>
     <object>objects\Battle_Box_Object</object>
     <object>objects\Boss_Battle_Object</object>
-<<<<<<< HEAD
     <object>objects\File_Creator_Object</object>
-=======
     <object>objects\Player_Overworld_Object</object>
->>>>>>> f91615f6686fdb039d60f9104bc2b4e3c61fdd1c
   </objects>
   <rooms name="rooms">
     <room>rooms\Field_room_1</room>

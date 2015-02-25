@@ -24,10 +24,12 @@
     <object>objects\Boss_Battle_Object</object>
     <object>objects\File_Creator_Object</object>
     <object>objects\Player_Overworld_Object</object>
+    <object>objects\Start_Field</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Field_room_1</room>
+    <room>rooms\Start_menu</room>
     <room>rooms\Battle_room</room>
+    <room>rooms\Field_room_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

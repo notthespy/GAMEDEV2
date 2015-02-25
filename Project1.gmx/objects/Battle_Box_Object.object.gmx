@@ -35,6 +35,7 @@ Is_Pressed=0
 Window_Text=""
 Cutscene_Time=0
 Player_Turn=0
+
 </string>
           </argument>
         </arguments>

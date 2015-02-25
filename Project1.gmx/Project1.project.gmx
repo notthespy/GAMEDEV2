@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -19,6 +20,7 @@
     <object>objects\Player_Battle_Object</object>
     <object>objects\Battle_Box_Object</object>
     <object>objects\Boss_Battle_Object</object>
+    <object>objects\File_Creator_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Battle_room</room>

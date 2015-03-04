@@ -31,17 +31,20 @@ Damage=2
 Items="Health Potion"
 Healing=5
 First=0
-//Attacks="PUNCH"
 Attack_File=file_text_open_read("PLAYER_ATTACK.txt")
-temp=""
 filestr=file_text_read_string(Attack_File)
-Attacks=filestr
+h=0;
+i=0;
+j=0;
+while(i&lt;string_length(filestr)){
+    i++
+    if(string_char_at(filestr,i)==" "){
+        Attacks[j]=string_copy(filestr,h,i-h)
+        h=i
+        j++    
+    }
+}
 i=0
-//while(string_char_at(filestr,i)!=""){
-//    i++
-//}
-//Attacks=file_text_read_string(Attack_File)
-dir=Attacks
 file_text_close(Attack_File)
 </string>
           </argument>

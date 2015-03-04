@@ -32,18 +32,27 @@ Healing=5
 First=0
 Attack_File=file_text_open_read("PLAYER_ATTACK.txt")
 filestr=file_text_read_string(Attack_File)
-h=0;
-i=0;
-j=0;
-while(i&lt;string_length(filestr)){
-    i++
-    if(string_char_at(filestr,i)==" "){
-        Attacks[j]=string_copy(filestr,h,i-h)
-        h=i
-        j++    
-    }
-}
 i=0
+j=0
+k=0
+low=0
+while(i&lt;string_length(filestr)){
+    if(string_char_at(filestr,i)==" "){
+        if(k==0){
+            Attacks[j]=instance_create(0,0,Attack_Object)
+            Attacks[j].Name=string_copy(filestr,low,i)
+            low=i
+            k++
+        }else if(k==1){
+            Attacks[j].Damage=real(string_digits(string_copy(filestr,low,i)))
+            k++
+        }
+    }
+    if(string_char_at(filestr,i)=="#"){
+        k=0
+    }
+    i++
+}
 file_text_close(Attack_File)
 </string>
           </argument>

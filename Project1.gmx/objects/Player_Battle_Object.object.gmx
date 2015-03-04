@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>Current_HP=10
 Max_HP=10
-Damage=2
 Items="Health Potion"
 Healing=5
 First=0

@@ -25,6 +25,7 @@
     <object>objects\File_Creator_Object</object>
     <object>objects\Player_Overworld_Object</object>
     <object>objects\Start_Field</object>
+    <object>objects\Attack_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

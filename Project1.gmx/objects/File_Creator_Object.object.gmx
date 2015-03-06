@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>file_delete("PLAYER_ATTACK.txt")
 player_attack=file_text_open_write("PLAYER_ATTACK.txt")
-info="PUNCH 3 #"
+info="PUNCH 3 @KICK 7 "
 file_text_write_string(player_attack,info)
 file_text_close(player_attack)
 </string>

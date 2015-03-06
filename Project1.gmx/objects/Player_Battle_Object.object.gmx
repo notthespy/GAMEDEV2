@@ -36,20 +36,26 @@ i=0
 j=0
 k=0
 low=0
+numattacks=0
+dir=0
 while(i&lt;string_length(filestr)){
+    if(string_char_at(filestr,i)=="@"){
+        k=0
+        j++
+        low=i+1
+    }else
     if(string_char_at(filestr,i)==" "){
         if(k==0){
             Attacks[j]=instance_create(0,0,Attack_Object)
             Attacks[j].Name=string_copy(filestr,low,i)
             low=i
             k++
+            numattacks++
         }else if(k==1){
             Attacks[j].Damage=real(string_digits(string_copy(filestr,low,i)))
             k++
+            low=i
         }
-    }
-    if(string_char_at(filestr,i)=="#"){
-        k=0
     }
     i++
 }
@@ -76,7 +82,7 @@ file_text_close(Attack_File)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_text(100,100,dir)
+            <string>//draw_text(100,100,Attacks[1].Damage)
 </string>
           </argument>
         </arguments>

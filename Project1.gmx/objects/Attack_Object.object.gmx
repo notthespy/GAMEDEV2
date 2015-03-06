@@ -28,6 +28,7 @@
             <string>Name="NAME"
 Damage=0
 Effect=""
+Target=""
 </string>
           </argument>
         </arguments>

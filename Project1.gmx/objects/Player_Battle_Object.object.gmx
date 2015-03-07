@@ -30,6 +30,8 @@ Max_HP=150
 Items="Health Potion"
 Healing=5
 numattacks=4
+Damage_Modifier=1
+Protected=0
 Attacks[0]=instance_create(0,0,Attack_Object)
 Attacks[0].Name="Mineuchi"//Prevents monster from attacking next turn
 Attacks[0].Damage=10
@@ -46,8 +48,8 @@ Attacks[1].Effect="P"
 
 Attacks[2]=instance_create(0,0,Attack_Object)
 Attacks[2].Name="Focus"//Deal 2x damage next turn
-Attacks[2].Damage=0
-Attacks[2].Target="SELF"
+Attacks[2].Damage=15
+Attacks[2].Target="ENEMY"
 Attacks[2].Effect="DD"
 
 Attacks[3]=instance_create(0,0,Attack_Object)

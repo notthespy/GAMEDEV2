@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>Current_HP=120
 Max_HP=120
+Can_Attack=1
 </string>
           </argument>
         </arguments>

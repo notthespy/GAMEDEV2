@@ -86,12 +86,12 @@ if(boss.Current_HP&lt;=0){
 }
 if(Player_Turn==0){
     Player_Turn=1
-    if(boss.Current_HP&lt;7){
+    if(boss.Current_HP&gt;75){
         Window_Text="BOSS USED PECK"
-        player.Current_HP-=2
+        player.Current_HP-=15
     }else{
         Window_Text="BOSS USED ETHEREAL FLAME"
-        player.Current_HP-=5
+        player.Current_HP-=45
     }
     if(player.Current_HP&lt;=0){
         player.Current_HP=0
@@ -338,7 +338,7 @@ if(Menu_Depth&gt;0){
             if(boss.Current_HP&lt;0){
                 boss.Current_HP=0
             }
-            Window_Text="Used "+player.Attacks[Select_Position].Name+" On BOSS!"
+            Window_Text="Used "+player.Attacks[Select_Position].Name+" On "+player.Attacks[Select_Position].Target
             alarm[1]=30
             Cutscene_Time=1
             Select_Position=0

@@ -25,10 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Current_HP=10
-Max_HP=10
-Attacks="PUNCH HARDER"
-Damage=3
+            <string>Current_HP=120
+Max_HP=120
 </string>
           </argument>
         </arguments>

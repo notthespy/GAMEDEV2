@@ -1,0 +1,19 @@
+Nick:
+All coding for battling system
+Most temporary art
+Set-up/maintenance of Github repository
+Management/Organization of team
+
+Sebastien:
+Co-developer of game concept and world 
+Plotting and story
+Character details
+
+Paul Horner:
+Basic start menu
+Over World movement
+Implemented a warp object (player can move from area to area)
+
+Jeremy:
+Sprite Art
+SFX

@@ -28,6 +28,7 @@
     <object>objects\Start_Field</object>
     <object>objects\Attack_Object</object>
     <object>objects\Battle_warp_Object</object>
+    <object>objects\Cutscene_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

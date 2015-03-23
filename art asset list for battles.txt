@@ -1,0 +1,12 @@
+Bare Minimium:
+	1x sprite per playayble character(3 total)
+	1x sprite per enemy/boss 
+	battle background
+	5 attack animations per playable character(5 attacks per player character, 15 total)
+	"Battle Box" (its the box in which the options for battle are in)
+	
+	
+Prefered
+	all above
+	idle animations for player characters/enemies/bosses
+	different sprites for the second phase of the boss fight

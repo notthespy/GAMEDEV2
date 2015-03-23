@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>Select_Position=0
 allow_runaway=0
-player=instance_create(700,300,Player_Battle_Object)
+player=instance_create(600,200,Player_Battle_Object)
 boss=instance_create(100,220,Boss_Battle_Object)
 cutscene=instance_create(0,0,Cutscene_Object)
 Menu_Depth=0

@@ -13,10 +13,13 @@
     <sprite>sprites\Select_Arrow_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Overworld_sprite</sprite>
+    <sprite>sprites\Boss_Battle_Sprite</sprite>
+    <sprite>sprites\Player_Battle_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
     <background>background\Field1_temp_background</background>
+    <background>background\Battle_Background</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">

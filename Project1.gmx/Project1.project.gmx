@@ -17,6 +17,7 @@
     <sprite>sprites\Stair_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Sprite</sprite>
     <sprite>sprites\Player_Battle_Sprite</sprite>
+    <sprite>sprites\sprite12</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -29,7 +30,8 @@
   </scripts>
   <objects name="objects">
     <object>objects\Player_Battle_Object</object>
-    <object>objects\Battle_Box_Object</object>
+    <object>objects\First_Boss_Battle_Box_Object</object>
+    <object>objects\Minion_Battle_Box_Object</object>
     <object>objects\Boss_Battle_Object</object>
     <object>objects\File_Creator_Object</object>
     <object>objects\Player_Overworld_Object</object>
@@ -39,10 +41,12 @@
     <object>objects\Up_stairs_obj</object>
     <object>objects\Down_stairs_obj</object>
     <object>objects\Cutscene_Object</object>
+    <object>objects\Minion_Battle_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
-    <room>rooms\Battle_room</room>
+    <room>rooms\First_Boss_Battle_Room</room>
+    <room>rooms\Minion_Battle_Room</room>
     <room>rooms\Field_room_1</room>
     <room>rooms\Field_room_2</room>
   </rooms>

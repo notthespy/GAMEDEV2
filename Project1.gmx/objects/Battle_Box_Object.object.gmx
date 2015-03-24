@@ -27,15 +27,18 @@
             <kind>1</kind>
             <string>Select_Position=0
 allow_runaway=0
-player=instance_create(700,300,Player_Battle_Object)
+player=instance_create(600,200,Player_Battle_Object)
 boss=instance_create(100,220,Boss_Battle_Object)
+cutscene=instance_create(0,0,Cutscene_Object)
 Menu_Depth=0
 Menu_Instance[0]="BASE"
 Is_Pressed=0
 Window_Text=""
 Cutscene_Time=0
+Cutscene_Text_Time=0
 Player_Turn=0
-
+Cutscene_Started=0
+Cutscene_Finished=0
 </string>
           </argument>
         </arguments>
@@ -111,6 +114,12 @@ if(Player_Turn==0){
     Cutscene_Time=0
     Player_Turn=0
 }
+if(boss.Current_HP&lt;=100 and Cutscene_Started==0){
+    Cutscene_Started=1
+    Cutscene_Time=1
+    Cutscene_Text_Time=1
+    cutscene.start=1
+}
 </string>
           </argument>
         </arguments>
@@ -154,10 +163,17 @@ draw_text(650,200,playerhealth)
 bosshealth=string(boss.Current_HP)+"/"+string(boss.Max_HP)
 draw_text(100,200,bosshealth)
 
-if(Cutscene_Time==1){
+if(Cutscene_Time==1 and Cutscene_Text_Time==0){
     draw_text(100,100,Window_Text)
 }
-
+if(Cutscene_Started==1 and Cutscene_Text_Time==1){
+    if(cutscene.text_place&gt;cutscene.text_total){
+        cutscene.start=0
+        Cutscene_Finished=1
+        Cutscene_Time=0
+        Cutscene_Text_Time=0
+    }
+}
 
 if(Menu_Depth&gt;=0){
     draw_text(100,600,"FIGHT!")
@@ -242,7 +258,7 @@ if(Menu_Depth&gt;0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Cutscene_Time==0){
+            <string>if(Cutscene_Time==0 and Cutscene_Text_Time==0){
     if(Menu_Depth=0){
         if(Select_Position==2){
             Select_Position=0
@@ -280,7 +296,7 @@ if(Menu_Depth&gt;0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Cutscene_Time==0){
+            <string>if(Cutscene_Time==0 and Cutscene_Text_Time==0){
     if(Menu_Depth==0){
         if(Select_Position==0){
             Select_Position=2
@@ -320,7 +336,7 @@ if(Menu_Depth&gt;0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Cutscene_Time==0){
+            <string>if(Cutscene_Time==0 and Cutscene_Text_Time==0){
     if(Is_Pressed=0){
         if(Menu_Depth==0){
             if(Select_Position==0){

@@ -115,14 +115,18 @@ if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
     exit
 }
 if(Player_Turn==0){
-        if(minarr[Enemy_Index].Can_Attack==1){
-            Window_Text="MINION "+string(Enemy_Index)+" USED PECK"
-            if(player.Protected!=1){
-                player.Current_HP-=15
+        if(minarr[Enemy_Index].Dead==0){
+            if(minarr[Enemy_Index].Can_Attack==1){
+                Window_Text="MINION "+string(Enemy_Index)+" USED PECK"
+                if(player.Protected!=1){
+                    player.Current_HP-=15
+                }
+            }else{
+                Window_Text="MINION"+string(Enemy_Index)+" COULD NOT ATTACK"
+                minarr[Enemy_Index].Can_Attack=1
             }
         }else{
-            Window_Text="MINION"+string(Enemy_Index)+" COULD NOT ATTACK"
-            minarr[Enemy_Index].Can_Attack=1
+            Window_Text="MINION"+string(Enemy_Index)+" IS DEAD"
         }
         Enemy_Index+=1
     if(Enemy_Index&gt;Enemy_Number){
@@ -183,11 +187,11 @@ if(minarr[0].Dead==1 and minarr[1].Dead==1 and minarr[2].Dead==1){
             <string>playerhealth=string(player.Current_HP)+"/"+string(player.Max_HP)
 draw_text(650,200,playerhealth)
 minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
-draw_text(200,100,minion0health)
-//minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
-draw_text(100,200,minion1health)
-//minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
-draw_text(300,100,minion2health)
+draw_text(365,100,minion0health)
+minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
+draw_text(160,240,minion1health)
+minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
+draw_text(365,350,minion2health)
 if(Cutscene_Time==1){
     draw_text(100,100,Window_Text)
 }
@@ -397,22 +401,23 @@ if(Menu_Depth&gt;0){
         }
         if(Menu_Depth==2){
             if(player.Damage_Modifier!=1){
-                minarr[Select_Position].Current_HP-=player.Attacks[Select_Position].Damage*player.Damage_Modifier
+                minarr[Select_Position].Current_HP-=player.Attacks[Attack_Num].Damage*player.Damage_Modifier
                 player.Damage_Modifier=1
             }else{
-                minarr[0].Current_HP-=player.Attacks[Select_Position].Damage
+                minarr[Select_Position].Current_HP-=player.Attacks[Attack_Num].Damage
             }
-            if(minarr[0].Current_HP&lt;0){
-                minarr[0].Current_HP=0
+            if(minarr[Select_Position].Current_HP&lt;0){
+                minarr[Select_Position].Current_HP=0
             }
-            Window_Text="Used "+player.Attacks[Select_Position].Name+" On "+player.Attacks[Select_Position].Target
-            if(player.Attacks[Select_Position].Effect="DD"){
+            //Window_Text="Used "+player.Attacks[Attack_Num].Name+" On "+player.Attacks[Attack_Num].Target
+            Window_Text="Used "+player.Attacks[Attack_Num].Name+" On Minion "+string(Select_Position)
+            if(player.Attacks[Attack_Num].Effect="DD"){
                 player.Damage_Modifier=2
             }
-            if(player.Attacks[Select_Position].Effect="P"){
+            if(player.Attacks[Attack_Num].Effect="P"){
                 player.Protected=1
             }
-            if(player.Attacks[Select_Position].Effect="PA"){
+            if(player.Attacks[Attack_Num].Effect="PA"){
                 minarr[0].Can_Attack=0
             }
             alarm[1]=30

@@ -13,13 +13,10 @@
     <sprite>sprites\Select_Arrow_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Overworld_sprite</sprite>
-<<<<<<< HEAD
     <sprite>sprites\select_arrow_sprite</sprite>
     <sprite>sprites\Stair_Sprite</sprite>
-=======
     <sprite>sprites\Boss_Battle_Sprite</sprite>
     <sprite>sprites\Player_Battle_Sprite</sprite>
->>>>>>> 822b5c0614d45e09330f40c90a9536297fbc5120
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -39,12 +36,9 @@
     <object>objects\Start_Field</object>
     <object>objects\Attack_Object</object>
     <object>objects\Battle_warp_Object</object>
-<<<<<<< HEAD
     <object>objects\Up_stairs_obj</object>
     <object>objects\Down_stairs_obj</object>
-=======
     <object>objects\Cutscene_Object</object>
->>>>>>> 822b5c0614d45e09330f40c90a9536297fbc5120
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

@@ -39,6 +39,9 @@ Cutscene_Time=0
 Player_Turn=0
 Enemy_Number=2
 Enemy_Index=0
+Attack_Num=0
+Attack_Minion=0
+Ready_Attack=0
 </string>
           </argument>
         </arguments>
@@ -105,9 +108,10 @@ Enemy_Index=0
     alarm[2]=30
     exit
 }
-if(minarr[0].Current_HP&lt;=0){
-    Window_Text="YOU HAVE KILLED THE BOSS"
-    alarm[2]=30
+if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
+    Window_Text="YOU HAVE KILLED MINION "+string(Enemy_Index)
+    minarr[Enemy_Index].Dead=1
+    alarm[1]=30
     exit
 }
 if(Player_Turn==0){
@@ -133,6 +137,10 @@ if(Player_Turn==0){
 }else{
     Cutscene_Time=0
     Player_Turn=0
+}
+if(minarr[0].Dead==1 and minarr[1].Dead==1 and minarr[2].Dead==1){
+    alarm[2]=30
+    Window_Text="YOU HAVE DEFEATED ALL THE MINIONS"
 }
 </string>
           </argument>
@@ -174,9 +182,12 @@ if(Player_Turn==0){
             <kind>1</kind>
             <string>playerhealth=string(player.Current_HP)+"/"+string(player.Max_HP)
 draw_text(650,200,playerhealth)
-bosshealth=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
-draw_text(100,200,bosshealth)
-
+minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
+draw_text(200,100,minion0health)
+//minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
+draw_text(100,200,minion1health)
+//minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
+draw_text(300,100,minion2health)
 if(Cutscene_Time==1){
     draw_text(100,100,Window_Text)
 }
@@ -211,6 +222,12 @@ if(Menu_Depth==1 and Menu_Instance[1]="ITEM"){
     draw_text(250,600,player.Items)
     draw_sprite(Select_Arrow_Temp_Sprite,0,225,600)
 }
+if(Menu_Depth==2){
+    draw_text(550,600,"Minion 0")
+    draw_text(550,625,"Minion 1")
+    draw_text(550,650,"Minion 2")
+    draw_sprite(Select_Arrow_Temp_Sprite,0,525,600+25*Select_Position)
+}
 </string>
           </argument>
         </arguments>
@@ -235,6 +252,9 @@ if(Menu_Depth==1 and Menu_Instance[1]="ITEM"){
             <kind>1</kind>
             <string>if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
     Select_Position=0
+}
+if(Menu_Depth==2){
+    Select_Position=Attack_Num
 }
 if(Menu_Depth&gt;0){
     Menu_Depth--
@@ -270,7 +290,14 @@ if(Menu_Depth&gt;0){
         }
     }
     if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
-        if(Select_Position==player.numattacks-1){
+        if(Select_Position==3){
+            Select_Position=0
+        }else{
+            Select_Position++
+        }
+    }
+    if(Menu_Depth==2){
+        if(Select_Position==2){
             Select_Position=0
         }else{
             Select_Position++
@@ -309,7 +336,14 @@ if(Menu_Depth&gt;0){
     }
     if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
         if(Select_Position==0){
-            Select_Position=player.numattacks-1
+            Select_Position=3
+        }else{
+            Select_Position--
+        }
+    }
+    if(Menu_Depth==2){
+        if(Select_Position==0){
+            Select_Position=2
         }else{
             Select_Position--
         }
@@ -348,12 +382,6 @@ if(Menu_Depth&gt;0){
                 Menu_Instance[1]="ATTACK"
                 exit
             }
-            if(Select_Position==1){
-                Menu_Depth+=1
-                Select_Position=0
-                Menu_Instance[1]="ITEM"
-                exit
-            }
             if(Select_Position==2){
                 allow_runaway=1
                 alarm[0]=30
@@ -362,9 +390,14 @@ if(Menu_Depth&gt;0){
             }
         }
         if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
-            Menu_Depth=0
+            Menu_Depth=2
+            Attack_Num=Select_Position
+            Select_Position=0
+            exit
+        }
+        if(Menu_Depth==2){
             if(player.Damage_Modifier!=1){
-                minarr[0].Current_HP-=player.Attacks[Select_Position].Damage*player.Damage_Modifier
+                minarr[Select_Position].Current_HP-=player.Attacks[Select_Position].Damage*player.Damage_Modifier
                 player.Damage_Modifier=1
             }else{
                 minarr[0].Current_HP-=player.Attacks[Select_Position].Damage
@@ -385,18 +418,7 @@ if(Menu_Depth&gt;0){
             alarm[1]=30
             Cutscene_Time=1
             Select_Position=0
-            exit
-        }
-        if(Menu_Depth==1 and Menu_Instance[1]="ITEM"){
             Menu_Depth=0
-            Select_Position=0
-            player.Current_HP+=player.Healing
-            if(player.Current_HP&gt;player.Max_HP){
-                player.Current_HP=player.Max_HP
-            }
-            Window_Text="USED A HEALTH POTION"
-            alarm[1]=30
-            Cutscene_Time=1
             exit
         }
         Is_Pressed=1

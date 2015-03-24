@@ -28,6 +28,7 @@
             <string>Current_HP=40
 Max_HP=40
 Can_Attack=1
+Dead=0
 </string>
           </argument>
         </arguments>

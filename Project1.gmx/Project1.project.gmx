@@ -13,7 +13,6 @@
     <sprite>sprites\Select_Arrow_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Overworld_sprite</sprite>
-<<<<<<< HEAD
     <sprite>sprites\select_arrow_sprite</sprite>
     <sprite>sprites\Stair_Sprite</sprite>
 =======
@@ -39,7 +38,6 @@
     <object>objects\Start_Field</object>
     <object>objects\Attack_Object</object>
     <object>objects\Battle_warp_Object</object>
-<<<<<<< HEAD
     <object>objects\Up_stairs_obj</object>
     <object>objects\Down_stairs_obj</object>
 =======

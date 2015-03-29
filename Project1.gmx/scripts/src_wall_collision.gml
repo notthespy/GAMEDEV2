@@ -1,17 +1,17 @@
-if(place_meeting(x+Obj_speed,y,Wall_Object))
+if(place_meeting(x+Obj_Xspeed,y,Wall_Object))
 {
-while(!place_meeting(x+sign(Obj_speed),y,Wall_Object))
+while(!place_meeting(x+sign(Obj_Xspeed),y,Wall_Object))
 {
-x+=sign(Obj_speed);
+x+=sign(Obj_Xspeed);
 }
-x-=Obj_speed;
+x-=Obj_Xspeed;
 }
 
-if(place_meeting(x,y+Obj_speed,Wall_Object))
+if(place_meeting(x,y+Obj_Yspeed,Wall_Object))
 {
-while(!place_meeting(x,y+sign(Obj_speed),Wall_Object))
+while(!place_meeting(x,y+sign(Obj_Yspeed),Wall_Object))
 {
-y+=sign(Obj_speed);
+y+=sign(Obj_Yspeed);
 }
-y-=Obj_speed;
+y-=Obj_Yspeed;
 }

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Obj_speed = 5;
+            <string>Obj_Xspeed = 5;
+Obj_Yspeed = 5;
 </string>
           </argument>
         </arguments>
@@ -115,10 +116,12 @@ y = max(y,0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_speed &gt; 0)
+            <string>
+if(Obj_Yspeed &gt; 0)
 {
-Obj_speed*=-1;
+Obj_Yspeed*=-1;
 }
+
 </string>
           </argument>
         </arguments>
@@ -143,7 +146,7 @@ Obj_speed*=-1;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>Obj_speed</string>
+            <string>Obj_Yspeed</string>
           </argument>
         </arguments>
       </action>
@@ -165,10 +168,12 @@ Obj_speed*=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_speed &lt; 0)
+            <string>
+if(Obj_Yspeed &lt; 0)
 {
-Obj_speed*=-1;
+Obj_Yspeed*=-1;
 }
+
 </string>
           </argument>
         </arguments>
@@ -193,7 +198,7 @@ Obj_speed*=-1;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>Obj_speed</string>
+            <string>Obj_Yspeed</string>
           </argument>
         </arguments>
       </action>
@@ -215,10 +220,12 @@ Obj_speed*=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_speed &lt; 0)
+            <string>
+if(Obj_Xspeed &lt; 0)
 {
-Obj_speed*=-1;
+Obj_Xspeed*=-1;
 }
+
 </string>
           </argument>
         </arguments>
@@ -239,7 +246,7 @@ Obj_speed*=-1;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Obj_speed</string>
+            <string>Obj_Xspeed</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -265,10 +272,11 @@ Obj_speed*=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_speed &gt; 0)
+            <string>if(Obj_Xspeed &gt; 0)
 {
-Obj_speed*=-1;
+Obj_Xspeed*=-1;
 }
+
 </string>
           </argument>
         </arguments>
@@ -289,7 +297,7 @@ Obj_speed*=-1;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Obj_speed</string>
+            <string>Obj_Xspeed</string>
           </argument>
           <argument>
             <kind>0</kind>

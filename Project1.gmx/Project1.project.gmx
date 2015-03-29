@@ -18,6 +18,7 @@
     <sprite>sprites\Boss_Battle_Sprite</sprite>
     <sprite>sprites\Player_Battle_Sprite</sprite>
     <sprite>sprites\Wall_sprite_temp</sprite>
+    <sprite>sprites\Temp_sight_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -44,6 +45,7 @@
     <object>objects\Cutscene_Object</object>
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
+    <object>objects\Overworld_enemy_sight_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

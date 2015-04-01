@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Current_HP=150
+            <string>Current_HP=130
 Max_HP=130
 numattacks=4
 Damage_Modifier=1

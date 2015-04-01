@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Current_HP=40
-Max_HP=40
+            <string>Current_HP=100
+Max_HP=100
 Can_Attack=1
 Dead=0
 </string>

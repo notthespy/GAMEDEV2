@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>Select_Position=0
 allow_runaway=0
-player=instance_create(600,200,Miko_Battle_Object)
+playerarr[0]=instance_create(500,100,Player_Battle_Object)
+playerarr[1]=instance_create(550,350,Miko_Battle_Object)
 minarr[0]=instance_create(250,100,Minion_Battle_Object)
 minarr[1]=instance_create(100,200,Minion_Battle_Object)
 minarr[2]=instance_create(250,300,Minion_Battle_Object)
@@ -36,12 +37,14 @@ Menu_Instance[0]="BASE"
 Is_Pressed=0
 Window_Text=""
 Cutscene_Time=0
-Player_Turn=0
+Player_Turn=1
 Enemy_Number=2
 Enemy_Index=0
 Attack_Num=0
 Attack_Minion=0
 Ready_Attack=0
+Character_Turn=0
+Num_Characters=1
 </string>
           </argument>
         </arguments>
@@ -103,10 +106,25 @@ Ready_Attack=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(player.Current_HP&lt;=0){
-    Window_Text="YOU HAVE BEEN KILLED"
+            <string>i=0
+while(i&lt;=Num_Characters){
+    if(playerarr[i].Current_HP&lt;=0){
+        if(i==0){
+            Window_Text="PLAYER ARE KILL"
+            alarm[1]=30
+        }
+        if(i==1){
+            Window_Text="MIKO IS KILL"
+            alarm[1]=30
+        }
+    }
+    i++
+}
+if(playerarr[0].Current_HP&lt;=0 and playerarr[1].Current_HP&lt;=0){
+    Window_Text="BOTH PLAYER AND MIKO ARE KILL...YOU FAIL"
     alarm[2]=30
     exit
+    
 }
 if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
     Window_Text="YOU HAVE KILLED MINION "+string(Enemy_Index)
@@ -118,8 +136,8 @@ if(Player_Turn==0){
         if(minarr[Enemy_Index].Dead==0){
             if(minarr[Enemy_Index].Can_Attack==1){
                 Window_Text="MINION "+string(Enemy_Index)+" USED PECK"
-                if(player.Protected!=1){
-                    player.Current_HP-=15
+                if(playerarr[Character_Turn].Protected!=1){
+                    playerarr[Character_Turn].Current_HP-=15
                 }
             }else{
                 Window_Text="MINION"+string(Enemy_Index)+" COULD NOT ATTACK"
@@ -131,16 +149,16 @@ if(Player_Turn==0){
         Enemy_Index+=1
     if(Enemy_Index&gt;Enemy_Number){
         Player_Turn=1
-        player.Protected=0
+        playerarr[Character_Turn].Protected=0
         Enemy_Index=0
     }
-    if(player.Current_HP&lt;=0){
-        player.Current_HP=0
+    if(playerarr[Character_Turn].Current_HP&lt;=0){
+        playerarr[Character_Turn].Current_HP=0
     }
+    Character_Turn=0
     alarm[1]=30
 }else{
     Cutscene_Time=0
-    Player_Turn=0
 }
 if(minarr[0].Dead==1 and minarr[1].Dead==1 and minarr[2].Dead==1){
     alarm[2]=30
@@ -184,8 +202,10 @@ if(minarr[0].Dead==1 and minarr[1].Dead==1 and minarr[2].Dead==1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playerhealth=string(player.Current_HP)+"/"+string(player.Max_HP)
-draw_text(650,200,playerhealth)
+            <string>playerhealth=string(playerarr[0].Current_HP)+"/"+string(playerarr[0].Max_HP)
+draw_text(650,100,playerhealth)
+mikohealth=string(playerarr[1].Current_HP)+"/"+string(playerarr[1].Max_HP)
+draw_text(640,340,mikohealth)
 minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
 draw_text(365,100,minion0health)
 minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
@@ -216,15 +236,11 @@ if(Menu_Depth=0){
 }
 if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
     i=0
-    while(i&lt;player.numattacks){
-        draw_text(250,600+25*i,player.Attacks[i].Name)
+    while(i&lt;playerarr[Character_Turn].numattacks){
+        draw_text(250,600+25*i,playerarr[Character_Turn].Attacks[i].Name)
         i++
     }
     draw_sprite(Select_Arrow_Temp_Sprite,0,225,600+25*Select_Position)
-}
-if(Menu_Depth==1 and Menu_Instance[1]="ITEM"){
-    draw_text(250,600,player.Items)
-    draw_sprite(Select_Arrow_Temp_Sprite,0,225,600)
 }
 if(Menu_Depth==2){
     draw_text(550,600,"Minion 0")
@@ -393,65 +409,92 @@ if(Menu_Depth&gt;0){
                 exit
             }
         }
-        if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK" and player.Attacks[Select_Position].Effect=="H"){
-            player.Current_HP+=player.Attacks[Select_Position].Damage
-            if(player.Current_HP&gt;player.Max_HP){
-                player.Current_HP=player.Max_HP
+        if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK" and playerarr[Character_Turn].Attacks[Select_Position].Effect=="H"){
+            playerarr[Character_Turn].Current_HP+=playerarr[Character_Turn].Attacks[Select_Position].Damage
+            if(playerarr[Character_Turn].Current_HP&gt;playerarr[Character_Turn].Max_HP){
+                playerarr[Character_Turn].Current_HP=playerarr[Character_Turn].Max_HP
             }
-            Window_Text="Used "+player.Attacks[Select_Position].Name+" On Self for "+string(player.Attacks[Select_Position].Damage)
-            alarm[1]=30
-            Cutscene_Time=1
-            Select_Position=0
-            Menu_Depth=0
-            exit
-            
-        }
-        if(Menu_Depth==2 or (Menu_Depth==1 and Menu_Instance[1]=="ATTACK" and player.Attacks[Select_Position].Effect=="ALL")){
-            if(player.Attacks[Select_Position].Effect=="ALL"){
-                Attack_Num=Select_Position
+            Window_Text="Used "+playerarr[Character_Turn].Attacks[Select_Position].Name+" On Self for "+string(playerarr[Character_Turn].Attacks[Select_Position].Damage)
+            if(Character_Turn==Num_Characters){
+                Cutscene_Time=1
                 Select_Position=0
-                i=0
-                while(i&lt;=Enemy_Number){
-                    if(player.Damage_Modifier!=1){
-                        minarr[i].Current_HP-=player.Attacks[Attack_Num].Damage*player.Damage_Modifier
-                    }else{
-                        minarr[i].Current_HP-=player.Attacks[Attack_Num].Damage
-                    }
-                    i++
-                }
-                player.Damage_Modifier=1
+                Menu_Depth=0
+                Player_Turn=0
+                alarm[1]=30
+                exit
             }else{
-                if(player.Damage_Modifier!=1){
-                    minarr[Select_Position].Current_HP-=player.Attacks[Attack_Num].Damage*player.Damage_Modifier
-                    player.Damage_Modifier=1
+                Cutscene_Time=1
+                Character_Turn+=1
+                Select_Position=0
+                Menu_Depth=0
+                alarm[1]=30
+                exit
+            }  
+        }
+        if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK" and playerarr[Character_Turn].Attacks[Select_Position].Effect=="ALL"){
+            Attack_Num=Select_Position
+            Select_Position=0
+            i=0
+            while(i&lt;=Enemy_Number){
+                if(playerarr[Character_Turn].Damage_Modifier!=1){
+                    minarr[i].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage*playerarr[Character_Turn].Damage_Modifier
                 }else{
-                    minarr[Select_Position].Current_HP-=player.Attacks[Attack_Num].Damage
+                    minarr[i].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage
                 }
+                i++
+            }
+            Window_Text="Used "+playerarr[Character_Turn].Attacks[Attack_Num].Name+" On All "
+            if(Character_Turn==Num_Characters){
+                Cutscene_Time=1
+                Select_Position=0
+                Menu_Depth=0
+                Player_Turn=0
+                alarm[1]=30
+                exit
+            }else{
+                Cutscene_Time=1
+                Character_Turn+=1
+                Select_Position=0
+                Menu_Depth=0
+                alarm[1]=30
+                exit
+            }
+        }
+        if(Menu_Depth==2){
+            if(playerarr[Character_Turn].Damage_Modifier!=1){
+                minarr[Select_Position].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage*playerarr[Character_Turn].Damage_Modifier
+                playerarr[Character_Turn].Damage_Modifier=1
+            }else{
+                minarr[Select_Position].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage
             }
             if(minarr[Select_Position].Current_HP&lt;0){
                 minarr[Select_Position].Current_HP=0
             }
-            //Window_Text="Used "+player.Attacks[Attack_Num].Name+" On "+player.Attacks[Attack_Num].Target
-            
-            if(player.Attacks[Attack_Num].Effect=="ALL"){
-                Window_Text="Used "+player.Attacks[Attack_Num].Name+" On All "
+            Window_Text="Used "+playerarr[Character_Turn].Attacks[Attack_Num].Name+" On Minion "+string(Select_Position)
+            if(playerarr[Character_Turn].Attacks[Attack_Num].Effect="DD"){
+                playerarr[Character_Turn].Damage_Modifier=2
+            }
+            if(playerarr[Character_Turn].Attacks[Attack_Num].Effect="P"){
+                playerarr[Character_Turn].Protected=1
+            }
+            if(playerarr[Character_Turn].Attacks[Attack_Num].Effect="PA"){
+                minarr[Select_Position].Can_Attack=0
+            }
+            if(Character_Turn==Num_Characters){
+                Cutscene_Time=1
+                Select_Position=0
+                Menu_Depth=0
+                Player_Turn=0
+                alarm[1]=30
+                exit
             }else{
-                Window_Text="Used "+player.Attacks[Attack_Num].Name+" On Minion "+string(Select_Position)
+                Cutscene_Time=1
+                Character_Turn+=1
+                Select_Position=0
+                Menu_Depth=0
+                alarm[1]=30
+                exit
             }
-            if(player.Attacks[Attack_Num].Effect="DD"){
-                player.Damage_Modifier=2
-            }
-            if(player.Attacks[Attack_Num].Effect="P"){
-                player.Protected=1
-            }
-            if(player.Attacks[Attack_Num].Effect="PA"){
-                minarr[0].Can_Attack=0
-            }
-            alarm[1]=30
-            Cutscene_Time=1
-            Select_Position=0
-            Menu_Depth=0
-            exit
         }
         if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
             Menu_Depth=2

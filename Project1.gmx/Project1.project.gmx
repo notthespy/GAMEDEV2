@@ -32,6 +32,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\Player_Battle_Object</object>
+    <object>objects\Miko_Battle_Object</object>
     <object>objects\First_Boss_Battle_Box_Object</object>
     <object>objects\Minion_Battle_Box_Object</object>
     <object>objects\Test_Battle_Miko_Object</object>

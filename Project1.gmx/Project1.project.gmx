@@ -19,6 +19,7 @@
     <sprite>sprites\Player_Battle_Sprite</sprite>
     <sprite>sprites\Wall_sprite_temp</sprite>
     <sprite>sprites\Temp_sight_sprite</sprite>
+    <sprite>sprites\Chasm_temp_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -46,13 +47,17 @@
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
     <object>objects\Overworld_enemy_sight_Object</object>
+    <object>objects\In_room_warp_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
     <room>rooms\First_Boss_Battle_Room</room>
     <room>rooms\Minion_Battle_Room</room>
-    <room>rooms\Field_room_1</room>
-    <room>rooms\Field_room_2</room>
+    <room>rooms\Outer_Cave_room</room>
+    <room>rooms\Cave_room_1</room>
+    <room>rooms\Cave_room_2</room>
+    <room>rooms\Cave_room_3</room>
+    <room>rooms\Ogre_boss_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

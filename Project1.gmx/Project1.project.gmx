@@ -17,6 +17,7 @@
     <sprite>sprites\Stair_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Sprite</sprite>
     <sprite>sprites\Player_Battle_Sprite</sprite>
+    <sprite>sprites\Miko_Battle_Sprite</sprite>
     <sprite>sprites\Wall_sprite_temp</sprite>
     <sprite>sprites\Temp_sight_sprite</sprite>
   </sprites>

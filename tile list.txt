@@ -1,0 +1,7 @@
+TIle List(1 per level):
+
+Default Floring
+Wall
+Stairs
+Rocks(non-wall non-navigatable terrain)
+Chasm(Down Stairs)

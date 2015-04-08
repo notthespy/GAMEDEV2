@@ -52,6 +52,7 @@
     <object>objects\Wall_Object</object>
     <object>objects\Overworld_enemy_sight_Object</object>
     <object>objects\In_room_warp_Object</object>
+    <object>objects\Room_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

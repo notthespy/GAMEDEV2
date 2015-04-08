@@ -31,6 +31,7 @@
   <scripts name="scripts">
     <script>scripts\src_start_menu.gml</script>
     <script>scripts\src_wall_collision.gml</script>
+    <script>scripts\src_Rock_collision.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Player_Battle_Object</object>

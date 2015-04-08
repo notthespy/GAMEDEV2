@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>Obj_Xspeed = 1;
 Obj_Yspeed = 6;
+Obj_defeated = false;
+returned = false;
 </string>
           </argument>
         </arguments>
@@ -62,6 +64,35 @@ Obj_Yspeed = 6;
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(Obj_defeated == true and returned == true)
+{
+instance_destroy();
+}
+
+if(Obj_defeated == false and returned == true)
+{
+alarm[0] = 3;
+}
+</string>
           </argument>
         </arguments>
       </action>

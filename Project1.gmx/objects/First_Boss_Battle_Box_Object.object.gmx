@@ -149,8 +149,7 @@ if(boss.Current_HP&lt;=100 and Cutscene_Started==0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-room_goto(Cave_room_1)
+            <string>room_goto(Cave_room_1)
 </string>
           </argument>
         </arguments>

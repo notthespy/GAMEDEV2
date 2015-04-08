@@ -250,9 +250,15 @@ if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
     draw_sprite(Select_Arrow_Temp_Sprite,0,225,600+25*Select_Position)
 }
 if(Menu_Depth==2){
-    draw_text(550,600,"Minion 0")
-    draw_text(550,625,"Minion 1")
-    draw_text(550,650,"Minion 2")
+    if(minarr[0].Current_HP&gt;0){
+        draw_text(550,600,"Minion 0")
+    }
+    if(minarr[1].Current_HP&gt;0){
+        draw_text(550,625,"Minion 1")
+    }
+    if(minarr[2].Current_HP&gt;0){
+        draw_text(550,650,"Minion 2")
+    }
     draw_sprite(Select_Arrow_Temp_Sprite,0,525,600+25*Select_Position)
 }
 </string>
@@ -324,10 +330,16 @@ if(Menu_Depth&gt;0){
         }
     }
     if(Menu_Depth==2){
-        if(Select_Position==2){
-            Select_Position=0
-        }else{
-            Select_Position++
+        test_var=true
+        while(test_var){
+            if(Select_Position==2){
+                Select_Position=0
+            }else{
+                Select_Position++
+            }
+            if(minarr[Select_Position].Current_HP&gt;0){
+                test_var=false
+            }
         }
     }
 }
@@ -369,10 +381,16 @@ if(Menu_Depth&gt;0){
         }
     }
     if(Menu_Depth==2){
-        if(Select_Position==0){
-            Select_Position=2
-        }else{
-            Select_Position--
+        test_var=true
+        while(test_var){
+            if(Select_Position==0){
+                Select_Position=2
+            }else{
+                Select_Position--
+            }
+            if(minarr[Select_Position].Current_HP&gt;0){
+                test_var=false
+            }
         }
     }
 }
@@ -506,7 +524,15 @@ if(Menu_Depth&gt;0){
         if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
             Menu_Depth=2
             Attack_Num=Select_Position
-            Select_Position=0
+            if(minarr[0].Current_HP&gt;0){
+                Select_Position=0
+            }else{
+                if(minarr[1].Current_HP&gt;0){
+                    Select_Position=1
+                }else{
+                    Select_Position=2
+                }
+            }
             exit
         }
         Is_Pressed=1

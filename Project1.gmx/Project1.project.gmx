@@ -50,8 +50,8 @@
     <object>objects\Cutscene_Object</object>
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
-    <object>objects\Overworld_enemy_sight_Object</object>
-    <object>objects\In_room_warp_Object</object>
+    <object>objects\One_way_in_room_warp_Object</object>
+    <object>objects\Target_room_warp_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
@@ -62,6 +62,7 @@
     <room>rooms\Cave_room_2</room>
     <room>rooms\Cave_room_3</room>
     <room>rooms\Ogre_boss_room</room>
+    <room>rooms\City_room_1</room>
     <room>rooms\Test_Battle_Miko_Room</room>
   </rooms>
   <help>

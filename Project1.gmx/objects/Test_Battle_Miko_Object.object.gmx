@@ -129,6 +129,7 @@ if(playerarr[0].Current_HP&lt;=0 and playerarr[1].Current_HP&lt;=0){
 if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
     Window_Text="YOU HAVE KILLED MINION "+string(Enemy_Index)
     minarr[Enemy_Index].Dead=1
+    minarr[Enemy_Index].visible=false
     alarm[1]=30
     exit
 }
@@ -206,12 +207,18 @@ if(minarr[0].Dead==1 and minarr[1].Dead==1 and minarr[2].Dead==1){
 draw_text(650,100,playerhealth)
 mikohealth=string(playerarr[1].Current_HP)+"/"+string(playerarr[1].Max_HP)
 draw_text(640,340,mikohealth)
-minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
-draw_text(365,100,minion0health)
-minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
-draw_text(160,240,minion1health)
-minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
-draw_text(365,350,minion2health)
+if(minarr[0].Current_HP&gt;0){
+    minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
+    draw_text(365,100,minion0health)
+}
+if(minarr[1].Current_HP&gt;0){
+    minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
+    draw_text(160,240,minion1health)
+}
+if(minarr[2].Current_HP&gt;0){
+    minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
+    draw_text(365,350,minion2health)
+}
 if(Cutscene_Time==1){
     draw_text(100,100,Window_Text)
 }

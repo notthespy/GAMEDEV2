@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>Obj_Xspeed = 5;
 Obj_Yspeed = 5;
+In_Battle=0;
 </string>
           </argument>
         </arguments>
@@ -54,6 +55,15 @@ x = max(x,0)
 
 y = min(y,room_height)
 y = max(y,0)
+
+if(instance_exists(Wall_Object)and(In_Battle==1)){
+    Obj_Xspeed=5
+    Obj_Yspeed=5
+    In_Battle=0
+    visible=true
+    x=xprevious
+    y=yprevious
+}
 </string>
           </argument>
         </arguments>
@@ -99,6 +109,30 @@ y = max(y,0)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Battle_warp_Object">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Obj_Xspeed=0;
+Obj_Yspeed=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="87">
       <action>
         <libid>1</libid>
@@ -116,12 +150,11 @@ y = max(y,0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(Obj_Yspeed &gt; 0)
-{
-Obj_Yspeed*=-1;
+            <string>if(In_Battle==0){
+    if(Obj_Yspeed &gt; 0){
+        Obj_Yspeed*=-1;
+    }
 }
-
 </string>
           </argument>
         </arguments>
@@ -168,12 +201,11 @@ Obj_Yspeed*=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(Obj_Yspeed &lt; 0)
-{
-Obj_Yspeed*=-1;
+            <string>if(In_Battle==0){
+    if(Obj_Yspeed &lt; 0){
+        Obj_Yspeed*=-1;
+    }
 }
-
 </string>
           </argument>
         </arguments>
@@ -220,12 +252,11 @@ Obj_Yspeed*=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(Obj_Xspeed &lt; 0)
-{
-Obj_Xspeed*=-1;
+            <string>if(In_Battle==0){
+    if(Obj_Xspeed &lt; 0){
+        Obj_Xspeed*=-1;
+    }
 }
-
 </string>
           </argument>
         </arguments>
@@ -272,11 +303,11 @@ Obj_Xspeed*=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_Xspeed &gt; 0)
-{
-Obj_Xspeed*=-1;
+            <string>if(In_Battle==0){
+    if(Obj_Xspeed &gt; 0){
+        Obj_Xspeed*=-1;
+    }
 }
-
 </string>
           </argument>
         </arguments>
@@ -302,6 +333,33 @@ Obj_Xspeed*=-1;
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="74">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_exists(Player_Battle_Object)){
+    In_Battle=1
+    visible=false
+    
+}
+</string>
           </argument>
         </arguments>
       </action>

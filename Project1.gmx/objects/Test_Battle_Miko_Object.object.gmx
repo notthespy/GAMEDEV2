@@ -129,6 +129,7 @@ if(playerarr[0].Current_HP&lt;=0 and playerarr[1].Current_HP&lt;=0){
 if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
     Window_Text="YOU HAVE KILLED MINION "+string(Enemy_Index)
     minarr[Enemy_Index].Dead=1
+    minarr[Enemy_Index].visible=false
     alarm[1]=30
     exit
 }
@@ -206,12 +207,18 @@ if(minarr[0].Dead==1 and minarr[1].Dead==1 and minarr[2].Dead==1){
 draw_text(650,100,playerhealth)
 mikohealth=string(playerarr[1].Current_HP)+"/"+string(playerarr[1].Max_HP)
 draw_text(640,340,mikohealth)
-minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
-draw_text(365,100,minion0health)
-minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
-draw_text(160,240,minion1health)
-minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
-draw_text(365,350,minion2health)
+if(minarr[0].Current_HP&gt;0){
+    minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
+    draw_text(365,100,minion0health)
+}
+if(minarr[1].Current_HP&gt;0){
+    minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
+    draw_text(160,240,minion1health)
+}
+if(minarr[2].Current_HP&gt;0){
+    minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
+    draw_text(365,350,minion2health)
+}
 if(Cutscene_Time==1){
     draw_text(100,100,Window_Text)
 }
@@ -243,9 +250,15 @@ if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
     draw_sprite(Select_Arrow_Temp_Sprite,0,225,600+25*Select_Position)
 }
 if(Menu_Depth==2){
-    draw_text(550,600,"Minion 0")
-    draw_text(550,625,"Minion 1")
-    draw_text(550,650,"Minion 2")
+    if(minarr[0].Current_HP&gt;0){
+        draw_text(550,600,"Minion 0")
+    }
+    if(minarr[1].Current_HP&gt;0){
+        draw_text(550,625,"Minion 1")
+    }
+    if(minarr[2].Current_HP&gt;0){
+        draw_text(550,650,"Minion 2")
+    }
     draw_sprite(Select_Arrow_Temp_Sprite,0,525,600+25*Select_Position)
 }
 </string>
@@ -317,10 +330,16 @@ if(Menu_Depth&gt;0){
         }
     }
     if(Menu_Depth==2){
-        if(Select_Position==2){
-            Select_Position=0
-        }else{
-            Select_Position++
+        test_var=true
+        while(test_var){
+            if(Select_Position==2){
+                Select_Position=0
+            }else{
+                Select_Position++
+            }
+            if(minarr[Select_Position].Current_HP&gt;0){
+                test_var=false
+            }
         }
     }
 }
@@ -362,10 +381,16 @@ if(Menu_Depth&gt;0){
         }
     }
     if(Menu_Depth==2){
-        if(Select_Position==0){
-            Select_Position=2
-        }else{
-            Select_Position--
+        test_var=true
+        while(test_var){
+            if(Select_Position==0){
+                Select_Position=2
+            }else{
+                Select_Position--
+            }
+            if(minarr[Select_Position].Current_HP&gt;0){
+                test_var=false
+            }
         }
     }
 }
@@ -499,7 +524,15 @@ if(Menu_Depth&gt;0){
         if(Menu_Depth==1 and Menu_Instance[1]=="ATTACK"){
             Menu_Depth=2
             Attack_Num=Select_Position
-            Select_Position=0
+            if(minarr[0].Current_HP&gt;0){
+                Select_Position=0
+            }else{
+                if(minarr[1].Current_HP&gt;0){
+                    Select_Position=1
+                }else{
+                    Select_Position=2
+                }
+            }
             exit
         }
         Is_Pressed=1

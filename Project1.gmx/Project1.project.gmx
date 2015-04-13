@@ -58,6 +58,7 @@
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
     <room>rooms\First_Boss_Battle_Room</room>
+    <room>rooms\Test_Battle_Miko_Room</room>
     <room>rooms\Minion_Battle_Room</room>
     <room>rooms\Outer_Cave_room</room>
     <room>rooms\Cave_room_1</room>
@@ -65,7 +66,9 @@
     <room>rooms\Cave_room_3</room>
     <room>rooms\Ogre_boss_room</room>
     <room>rooms\City_room_1</room>
-    <room>rooms\Test_Battle_Miko_Room</room>
+    <room>rooms\City_room_2</room>
+    <room>rooms\City_room_3</room>
+    <room>rooms\Snake_boss_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

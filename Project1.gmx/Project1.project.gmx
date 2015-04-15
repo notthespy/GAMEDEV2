@@ -35,7 +35,6 @@
     <script>scripts\src_wall_collision.gml</script>
     <script>scripts\src_Rock_collision.gml</script>
   </scripts>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\Player_Battle_Object</object>
     <object>objects\Miko_Battle_Object</object>

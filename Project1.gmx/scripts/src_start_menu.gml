@@ -4,7 +4,7 @@ switch (mpos)
 {
     case 0: room_goto(Outer_Cave_room); break;
     
-    case 1: room_goto(Test_Battle_Miko_Room); break;
+    case 1: room_goto(Test_Battle_All_Room); break;
     
     default: break;
 

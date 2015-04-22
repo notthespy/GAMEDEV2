@@ -60,6 +60,8 @@
     <object>objects\Cutscene_Boss1_After</object>
     <object>objects\Cutscene_21</object>
     <object>objects\Cutscene_22</object>
+    <object>objects\Cutscene_Boss2_Before</object>
+    <object>objects\Cutscene_Boss2_After</object>
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
     <object>objects\Target_room_warp_Object</object>

@@ -21,5 +21,16 @@
   <height>64</height>
   <frames>
     <frame index="0">images\Player_Overworld_sprite_0.png</frame>
+    <frame index="1">images\Player_Overworld_sprite_1.png</frame>
+    <frame index="2">images\Player_Overworld_sprite_2.png</frame>
+    <frame index="3">images\Player_Overworld_sprite_3.png</frame>
+    <frame index="4">images\Player_Overworld_sprite_4.png</frame>
+    <frame index="5">images\Player_Overworld_sprite_5.png</frame>
+    <frame index="6">images\Player_Overworld_sprite_6.png</frame>
+    <frame index="7">images\Player_Overworld_sprite_7.png</frame>
+    <frame index="8">images\Player_Overworld_sprite_8.png</frame>
+    <frame index="9">images\Player_Overworld_sprite_9.png</frame>
+    <frame index="10">images\Player_Overworld_sprite_10.png</frame>
+    <frame index="11">images\Player_Overworld_sprite_11.png</frame>
   </frames>
 </sprite>

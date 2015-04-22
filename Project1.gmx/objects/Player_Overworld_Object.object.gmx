@@ -28,6 +28,12 @@
             <string>Obj_Xspeed = 5;
 Obj_Yspeed = 5;
 In_Battle=0;
+Orientation=0;
+Time=0;
+Left=0;
+image_speed=0;
+MoveX=0;
+MoveY=0;
 </string>
           </argument>
         </arguments>
@@ -155,6 +161,7 @@ Obj_Yspeed=0;
         Obj_Yspeed*=-1;
     }
 }
+Orientation=3;
 </string>
           </argument>
         </arguments>
@@ -206,6 +213,7 @@ Obj_Yspeed=0;
         Obj_Yspeed*=-1;
     }
 }
+Orientation=0;
 </string>
           </argument>
         </arguments>
@@ -257,6 +265,7 @@ Obj_Yspeed=0;
         Obj_Xspeed*=-1;
     }
 }
+Orientation=2
 </string>
           </argument>
         </arguments>
@@ -308,6 +317,7 @@ Obj_Yspeed=0;
         Obj_Xspeed*=-1;
     }
 }
+Orientation=1;
 </string>
           </argument>
         </arguments>
@@ -359,6 +369,53 @@ Obj_Yspeed=0;
     visible=false
     
 }
+image_index=Orientation
+if(MoveX==x and MoveY==y){
+    Time=0
+    Left=0
+    image_index=Orientation
+}else{
+    if(Time!=5){
+        Time+=1
+    }else{
+        Time=0
+        if(Left==0){
+            Left=1
+        }else{
+            Left=0
+        }
+    }
+    if(Orientation==0){
+        if(Left==0){
+            image_index=4
+        }else{
+            image_index=5
+        }
+    }
+    if(Orientation==1){
+        if(Left==0){
+            image_index=6
+        }else{
+            image_index=7
+        }
+    }
+    if(Orientation==2){
+        if(Left==0){
+            image_index=8
+        }else{
+            image_index=9
+        }
+    }
+    if(Orientation==3){
+        if(Left=0){
+            image_index=10
+        }else{
+            image_index=11
+        }
+    }
+}
+MoveX=x
+MoveY=y
 </string>
           </argument>
         </arguments>

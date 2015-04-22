@@ -6,6 +6,8 @@ Kijimuna = KI
 Room 1-1 and 1-2, either:
 1 KO, 1 SH, 1 KI
 
+Room 1-3, Enter Kyoko
+
 Room 1-3, either:
 1 KO, 1 SH, 1 KI
 2 KO, 2 SH, 2 KI

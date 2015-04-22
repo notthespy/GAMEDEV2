@@ -39,7 +39,8 @@
     <object>objects\Player_Battle_Object</object>
     <object>objects\Miko_Battle_Object</object>
     <object>objects\Ninja_Battle_Object</object>
-    <object>objects\First_Boss_Battle_Box_Object</object>
+    <object>objects\First_Boss_Battle_Box_Object_11</object>
+    <object>objects\First_Boss_Battle_Box_Object_12</object>
     <object>objects\Minion_Battle_Box_Object</object>
     <object>objects\Test_Battle_Miko_Object</object>
     <object>objects\Test_All_Characters_Battle_Box_Object</object>
@@ -48,7 +49,8 @@
     <object>objects\Player_Overworld_Object</object>
     <object>objects\Start_Field</object>
     <object>objects\Attack_Object</object>
-    <object>objects\Battle_warp_Object</object>
+    <object>objects\Battle_warp_Object_11</object>
+    <object>objects\Battle_warp_Object_12</object>
     <object>objects\Up_stairs_Object</object>
     <object>objects\Down_stairs_Object</object>
     <object>objects\Cutscene_Object</object>
@@ -61,7 +63,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
-    <room>rooms\First_Boss_Battle_Room</room>
+    <room>rooms\First_Boss_Battle_Room_11</room>
+    <room>rooms\First_Boss_Battle_Room_12</room>
     <room>rooms\Test_Battle_Miko_Room</room>
     <room>rooms\Test_Battle_All_Room</room>
     <room>rooms\Minion_Battle_Room</room>

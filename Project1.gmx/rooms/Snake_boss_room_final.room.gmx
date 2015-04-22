@@ -210,11 +210,11 @@
     <instance objName="Wall_Object" x="0" y="256" name="inst_B0E85778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="0" y="320" name="inst_224EB318" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="0" y="384" name="inst_ECC5C7BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="512" y="128" name="inst_D421AF09" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="32" y="640" name="inst_C84DF252" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="640" y="1184" name="inst_D0A84515" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="1120" y="1056" name="inst_D80A9D75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="1376" y="288" name="inst_D6D3134F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="512" y="128" name="inst_D421AF09" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="32" y="640" name="inst_C84DF252" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="640" y="1184" name="inst_D0A84515" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="1120" y="1056" name="inst_D80A9D75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="1376" y="288" name="inst_D6D3134F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Down_stairs_Object" x="576" y="1408" name="inst_F8300EDD" locked="0" code="warp_x = 800;&#xA;warp_y = 1376;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Target_room_warp_Object" x="1312" y="896" name="inst_84103EA6" locked="0" code="warp_x = 1344;&#xA;warp_y = 800;&#xA;target_room = Snake_boss_room_lvl1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Up_stairs_Object" x="96" y="192" name="inst_68C740DC" locked="0" code="warp_x = 32;&#xA;warp_y = 800;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

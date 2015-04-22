@@ -114,7 +114,7 @@ alarm[0] = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(First_Boss_Battle_Room);
+            <string>room_goto(First_Boss_Battle_Room_12);
 //instance_create(200,200,First_Boss_Battle_Box_Object);
 instance_destroy();
 </string>

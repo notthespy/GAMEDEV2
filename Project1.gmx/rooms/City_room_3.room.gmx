@@ -121,12 +121,12 @@
     <instance objName="Wall_Object" x="512" y="768" name="inst_7E5569D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="384" y="128" name="inst_9EE353A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="384" y="0" name="inst_63283684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="384" y="64" name="inst_EC300554" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="384" y="64" name="inst_EC300554" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="512" y="192" name="inst_B9BEB2A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Down_stairs_Object" x="1088" y="960" name="inst_BFA6A388" locked="0" code="warp_x = 928;&#xA;warp_y = 384;&#xA;target_room = City_room_2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="576" y="448" name="inst_5C0D1284" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="736" y="512" name="inst_7029DBBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="32" y="704" name="inst_77B45C18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="32" y="704" name="inst_77B45C18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="448" y="2240" name="inst_ACF75411" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="1024" y="2240" name="inst_2CA0B213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="832" y="2240" name="inst_0398E379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -245,9 +245,9 @@
     <instance objName="Wall_Object" x="704" y="1600" name="inst_70B4C401" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="1088" y="2048" name="inst_F4EA3956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="1152" y="2048" name="inst_4727F88A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="224" y="1920" name="inst_3F1D218B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="576" y="1312" name="inst_67096477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="1056" y="1536" name="inst_80985CBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="224" y="1920" name="inst_3F1D218B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="576" y="1312" name="inst_67096477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="1056" y="1536" name="inst_80985CBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="768" y="1536" name="inst_5A8F7ED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="832" y="1536" name="inst_7ECC5CEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="896" y="1536" name="inst_F9D3B28A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

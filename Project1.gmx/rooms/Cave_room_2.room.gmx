@@ -51,11 +51,11 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Battle_warp_Object" x="544" y="192" name="inst_70D10B9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="768" y="640" name="inst_99D4C71D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="576" y="704" name="inst_60C69EFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="1024" y="64" name="inst_C9904B37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="32" y="320" name="inst_2889737F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Object" x="928" y="352" name="inst_CFABE8BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Object" x="800" y="320" name="inst_2D9425D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Object" x="800" y="256" name="inst_A091FDAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Object" x="864" y="352" name="inst_6ADFDA7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Object" x="992" y="352" name="inst_5437EB66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="-32" y="0" name="inst_96C4A69C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="-32" y="64" name="inst_A1699356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="-32" y="128" name="inst_DB4BD12E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -184,11 +184,10 @@
     <instance objName="Wall_Object" x="928" y="96" name="inst_70093FD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="928" y="160" name="inst_DFD3B2D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="928" y="224" name="inst_614AA630" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Object" x="800" y="256" name="inst_A091FDAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Object" x="800" y="320" name="inst_2D9425D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Object" x="864" y="352" name="inst_6ADFDA7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Object" x="928" y="352" name="inst_CFABE8BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Object" x="992" y="352" name="inst_5437EB66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_12" x="640" y="704" name="inst_025E62D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_12" x="1056" y="96" name="inst_663A91C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_12" x="384" y="256" name="inst_F986DAD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_12" x="96" y="384" name="inst_C9342170" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

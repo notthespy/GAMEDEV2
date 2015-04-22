@@ -20,8 +20,8 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\Chasm_temp_sprite_0.png</frame>
-    <frame index="1">images\Chasm_temp_sprite_1.png</frame>
-    <frame index="2">images\Chasm_temp_sprite_2.png</frame>
+    <frame index="0">images\Rock_sprite_0.png</frame>
+    <frame index="1">images\Rock_sprite_1.png</frame>
+    <frame index="2">images\Rock_sprite_2.png</frame>
   </frames>
 </sprite>

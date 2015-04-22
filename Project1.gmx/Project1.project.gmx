@@ -8,7 +8,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\Player_Battle_Temp_Sprite</sprite>
-    <sprite>sprites\Player_Overworld_temp_sprite</sprite>
+    <sprite>sprites\Player_Overworld_sprite</sprite>
     <sprite>sprites\Battle_Box_Sprite_Temp</sprite>
     <sprite>sprites\Select_Arrow_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Temp_Sprite</sprite>
@@ -18,11 +18,11 @@
     <sprite>sprites\Boss_Battle_Sprite</sprite>
     <sprite>sprites\Player_Battle_Sprite</sprite>
     <sprite>sprites\Miko_Battle_Sprite</sprite>
-    <sprite>sprites\Wall_sprite_temp</sprite>
-    <sprite>sprites\Temp_sight_sprite</sprite>
+    <sprite>sprites\Wall_cave_sprite</sprite>
     <sprite>sprites\Chasm_temp_sprite</sprite>
     <sprite>sprites\Custom_Font_Sprite</sprite>
     <sprite>sprites\Ninja_Battle_Sprite</sprite>
+    <sprite>sprites\Rock_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -54,10 +54,9 @@
     <object>objects\Cutscene_Object</object>
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
-    <object>objects\One_way_in_room_warp_Object</object>
     <object>objects\Target_room_warp_Object</object>
-    <object>objects\Overworld_enemy_sight_Object</object>
     <object>objects\Room_Object</object>
+    <object>objects\Rock_object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
@@ -69,11 +68,17 @@
     <room>rooms\Cave_room_1</room>
     <room>rooms\Cave_room_2</room>
     <room>rooms\Cave_room_3</room>
-    <room>rooms\Ogre_boss_room</room>
+    <room>rooms\Ogre_boss_room_lvl1</room>
+    <room>rooms\Orge_boss_room_lvl2</room>
+    <room>rooms\Ogre_boss_room_lvl3</room>
+    <room>rooms\Ogre_boss_room_final</room>
     <room>rooms\City_room_1</room>
     <room>rooms\City_room_2</room>
     <room>rooms\City_room_3</room>
-    <room>rooms\Snake_boss_room</room>
+    <room>rooms\Snake_boss_room_lvl1</room>
+    <room>rooms\Snake_boss_room_lvl2</room>
+    <room>rooms\Snake_boss_room_lvl3</room>
+    <room>rooms\Snake_boss_room_final</room>
     <room>rooms\Field_room_1</room>
     <room>rooms\Field_room_2</room>
     <room>rooms\Field_room_3</room>

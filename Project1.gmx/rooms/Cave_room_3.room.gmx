@@ -634,8 +634,8 @@
     <instance objName="Battle_warp_Object" x="3392" y="2400" name="inst_525EB3C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object" x="3200" y="2496" name="inst_C34AC6B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object" x="3968" y="1664" name="inst_0CFDA557" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Down_stairs_Object" x="608" y="768" name="inst_C9CF9694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Up_stairs_Object" x="3168" y="2336" name="inst_E66C5A53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Down_stairs_Object" x="608" y="768" name="inst_C9CF9694" locked="0" code="warp_x = 224;&#xA;warp_y = 704;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Up_stairs_Object" x="3168" y="2336" name="inst_E66C5A53" locked="0" code="warp_x = 160;&#xA;warp_y = 1376;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="1440" y="2240" name="inst_C19C770F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="1632" y="2240" name="inst_3ED83421" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="3776" y="2560" name="inst_7BC55BBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

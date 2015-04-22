@@ -51,8 +51,8 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Target_room_warp_Object" x="1312" y="256" name="inst_09753E73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Down_stairs_Object" x="1088" y="256" name="inst_6C8B1124" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Target_room_warp_Object" x="1312" y="256" name="inst_09753E73" locked="0" code="warp_x = 320;&#xA;warp_y = 2280;&#xA;target_room = Ogre_boss_room_final;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Down_stairs_Object" x="1088" y="256" name="inst_6C8B1124" locked="0" code="warp_x = 1216;&#xA;warp_y = 96;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="2304" y="1600" name="inst_6612F12B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="0" y="192" name="inst_97290B4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="0" y="256" name="inst_EE49651C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -418,7 +418,7 @@
     <instance objName="Rock_object" x="2112" y="864" name="inst_FB1F2232" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="2176" y="864" name="inst_014E7F0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object" x="288" y="448" name="inst_C810507D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object" x="1088" y="96" name="inst_5AE3776A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object" x="864" y="224" name="inst_5AE3776A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object" x="1568" y="1056" name="inst_D74C8D4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object" x="2144" y="192" name="inst_030ADE42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

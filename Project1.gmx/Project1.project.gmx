@@ -62,6 +62,10 @@
     <object>objects\Cutscene_22</object>
     <object>objects\Cutscene_Boss2_Before</object>
     <object>objects\Cutscene_Boss2_After</object>
+    <object>objects\Cutscene_31</object>
+    <object>objects\Cutscene_32</object>
+    <object>objects\Cutscene_Boss3_Before</object>
+    <object>objects\Cutscene_Boss3_After</object>
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
     <object>objects\Target_room_warp_Object</object>

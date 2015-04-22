@@ -26,36 +26,20 @@
           <argument>
             <kind>1</kind>
             <string>text_place=0
-text_total=27
+text_total=11
 start=1
-text[0]="Tatsumi: Excellent!  Haruna, contact HQ!  Tell them to cancel the Kusanagi System!"  
-text[1]="Haruna: R-Right!"  
-text[2]="Kyoto Exorcism Bureau, Main Branch, this is Exorcist Haruna Suzunashi!"  
-text[3]="Yamato-no-Orochi has been defeated; deactivate the Kusanagi System!"  
-text[4]="I repeat, Yamato-no-Orochi has been defeated; deactivate the Kusanagi System!"  
-text[5]="HQ: W-What?  What are you doing at those coordinates?"  
-text[6]="Didn’t you get the orders to evacuate?"
-text[7]="Haruna: That’s not important right now!"  
-text[8]="Deactivate the Kusanagi System, there’s only 10 minutes left!"  
-text[9]="HQ: R-Right!  Boss, there’s a situation you need to hear about!"  
-text[10]="Kyoko: So now we wait?"  
-text[11]="Tatsumi: There’s nothing else we can do at this point."  
-text[12]="HQ: Exorcists Suzunashi, Hasegawa and Akabane,"
-text[13]="you’ve got a lot of nerve disobeying direct orders."  
-text[14]="Haruna: We’ll take on whatever punishment is necessary."  
-text[15]="But what about the Kusanagi System; is it deactivated?"  
-text[16]="HQ: The Kusanagi System has been deactivated due to these extraordinary circumstances."  
-text[17]="However, we’re still gauging the fallout of the situation."  
-text[18]="Remain on standby until further notice."  
-text[19]="Haruna: Right.  Exorcist Suzunashi, signing off."  
-text[20]="Tatsumi: That’s a relief.  Still… Ugh, I’m going to end up on probation again…" 
-text[21]="Haruna: Ahhh, my perfect record!"  
-text[22]="I’d even managed to keep it despite partnering with you, but…" 
-text[23]="Tatsumi: How are you doing, Kyoko?"  
-text[24]="Kyoko: Hmm… better."  
-text[25]="Tatsumi: Alright, then."  
-text[26]="Well, we’ve got a bit of time, so let’s rest before HQ tears us to pieces!" 
-text[27]="Haruna: Right…"
+text[0]="Tatsumi: This is it, isn’t it?" 
+text[1]="Haruna: Yes; the Sesshouseki should be just ahead.  And in front of that is..." 
+text[2]="Kyoko: The Nine-Tailed Fox."  
+text[3]="Tatsumi: This will be the toughest mission we have ever taken on."  
+text[4]="Ahead of us is the deadliest Monstrosity in history," 
+text[5]="and we’ll likely be facing it alone.  However, I believe."  
+text[6]="I believe in our power."  
+text[7]="I believe in our ability to exorcise the Nine-Tailed Fox."  
+text[8]="And most of all, I believe that we all get out of this alive."  
+text[9]="Kyoto Exorcists, move out!"  
+text[10]="Haruna: Right!"  
+text[11]="Kyoko: Right!"
 </string>
           </argument>
         </arguments>

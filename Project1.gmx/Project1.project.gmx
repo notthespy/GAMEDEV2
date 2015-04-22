@@ -52,6 +52,7 @@
     <object>objects\Up_stairs_Object</object>
     <object>objects\Down_stairs_Object</object>
     <object>objects\Cutscene_Object</object>
+    <object>objects\Start_Cutscene_Object</object>
     <object>objects\Minion_Battle_Object</object>
     <object>objects\Wall_Object</object>
     <object>objects\Target_room_warp_Object</object>

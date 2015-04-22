@@ -1,0 +1,45 @@
+-Per Battle-
+Kosenjobi = KO
+Shachihoko = SH
+Kijimuna = KI
+
+Room 1-1 and 1-2, either:
+1 KO, 1 SH, 1 KI
+
+Room 1-3, either:
+1 KO, 1 SH, 1 KI
+2 KO, 2 SH, 2 KI
+
+Boss 1: Oni
+
+Room 2-1, either:
+1 KO, 1 SH, 1 KI
+2 KO, 2 SH, 2 KI
+
+Room 2-2, either:
+2 KO, 2 SH, 2 KI
+1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
+
+Room 2-3, either: 
+2 KO, 2 SH, 2 KI
+1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
+3 KO, 3 SH, 3 KI
+
+Boss 2: Kyuubei
+
+Room 3-1, either:
+2 KO, 2 SH, 2 KI
+1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
+3 KO, 3 SH, 3 KI
+
+Room 3-2, either:
+1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
+3 KO, 3 SH, 3 KI
+1 KO/2 SH, 1 SH/2 KI, 1 KI/2 KO
+
+Room 3-3, either:
+3 KO, 3 SH, 3 KI
+1 KO/2 SH, 1 SH/2 KI, 1 KI/2 KO
+1 KO/1 SH/1 KI
+
+Boss 3: Orochi

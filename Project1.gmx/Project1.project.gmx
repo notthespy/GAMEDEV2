@@ -23,6 +23,7 @@
     <sprite>sprites\Custom_Font_Sprite</sprite>
     <sprite>sprites\Ninja_Battle_Sprite</sprite>
     <sprite>sprites\Rock_sprite</sprite>
+    <sprite>sprites\sprite16</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -44,6 +45,10 @@
     <object>objects\Minion_Battle_Box_Object</object>
     <object>objects\Test_Battle_Miko_Object</object>
     <object>objects\Test_All_Characters_Battle_Box_Object</object>
+    <object>objects\K1_S1_J1_Battle_Object</object>
+    <object>objects\K1_Battle_Object</object>
+    <object>objects\S1_Battle_Object</object>
+    <object>objects\J1_Battle_Object</object>
     <object>objects\Boss_Battle_Object</object>
     <object>objects\File_Creator_Object</object>
     <object>objects\Player_Overworld_Object</object>
@@ -67,6 +72,9 @@
     <object>objects\Cutscene_Boss3_Before</object>
     <object>objects\Cutscene_Boss3_After</object>
     <object>objects\Minion_Battle_Object</object>
+    <object>objects\Kosenjobi_Battle_Object</object>
+    <object>objects\Shachihoko_Battle_Object</object>
+    <object>objects\Jubokko_Battle_Object</object>
     <object>objects\Wall_Object</object>
     <object>objects\Target_room_warp_Object</object>
     <object>objects\Room_Object</object>

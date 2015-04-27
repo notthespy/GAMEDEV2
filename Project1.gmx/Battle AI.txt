@@ -1,0 +1,44 @@
+-Battle AI-
+S = Single
+M = Multi
+C = Caster
+A = Ally
+
+Kosenjobi:	       Occurrence % 
+HP 50	   Dmg	 Target A1 A2 A3
+Flame Lick 20-30 S	30 40 50
+Undead Ire 10-20 M	50 40 30
+Pyro Ether +50HP C	20 20 20
+
+Shachihoko:	       Occurrence % 
+HP 65	   Dmg	 Target A1 A2 A3
+Tail Lash  15-25 S	60 50 40
+Deluge     15-25 M	10 20 30
+Heal Rain  +50HP A	30 30 30
+
+Jubokko:	       Occurrence %
+HP 80      Dmg   Target A1 A2 A3
+Twig Whip  10-20 M	40 30 20
+Vamp Vine  20-30 S	20 30 40
+Root Wall  Nulls C	40 40 40
+
+*Vamp Vine heals Jubokko by its dmg
+*Root Wall nulls dmg for 2 turns
+
+Oni:		       Occurrence %
+HP 250     Dmg   Target P1 P2
+Iron Club  30-40 S      30 50
+Swing      15-30 M	40 20
+Kirin Meat +50HP C	30 30
+
+Orochi:		       Occurrence %
+HP 300     Dmg   Target P1 P2
+Snake Bite 20-30 M	30 40
+Head Slam  30-40 S	50 40
+Burrow Mud +50HP C	20 20
+
+Kyuubei:	       Occurrence %
+HP 400     Dmg   Target P1 P2
+Fox Strike 40-50 S	30 40
+Tail Brush 25-35 M	30 40
+Foxberries +50HP C	40 20

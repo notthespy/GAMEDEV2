@@ -476,6 +476,7 @@
     <instance objName="Battle_warp_Object_11" x="2080" y="2240" name="inst_921183DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object_11" x="1888" y="2496" name="inst_B6A6490C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object_11" x="864" y="2080" name="inst_5FD06CE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Cutscene_Boss1_Before" x="320" y="2208" name="inst_9AC32391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

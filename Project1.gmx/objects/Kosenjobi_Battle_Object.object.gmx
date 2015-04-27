@@ -29,6 +29,7 @@
 Max_HP=50
 Can_Attack=1
 Dead=0
+Type="Kosenjobi"
 </string>
           </argument>
         </arguments>

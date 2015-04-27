@@ -29,6 +29,7 @@
 Max_HP=65
 Can_Attack=1
 Dead=0
+Type="Shachihoko"
 </string>
           </argument>
         </arguments>

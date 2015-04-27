@@ -90,7 +90,7 @@ instance_destroy();
 
 if(Obj_defeated == false and returned == true)
 {
-alarm[0] = 3;
+alarm[0] = 30;
 }
 </string>
           </argument>
@@ -114,9 +114,13 @@ alarm[0] = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(First_Boss_Battle_Room_11);
-//instance_create(200,200,First_Boss_Battle_Box_Object);
+            <string>global.room_to_return_to = room;
+//this is invalid cause it only workis if the object is in the current room
+global.fighting_this_monster = id;
+
 instance_destroy();
+room_goto(First_Boss_Battle_Room_11);
+//instance_create(200,200,First_Boss_Battle_Box_Object);
 </string>
           </argument>
         </arguments>

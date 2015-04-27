@@ -60,6 +60,7 @@
     <object>objects\Target_room_warp_Object</object>
     <object>objects\Room_Object</object>
     <object>objects\Rock_object</object>
+    <object>objects\Info_cloud_object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

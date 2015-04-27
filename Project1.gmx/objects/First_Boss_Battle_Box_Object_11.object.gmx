@@ -61,7 +61,11 @@ Cutscene_Finished=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Cave_room_1)
+            <string>//instance_id[global.fighting_this_monster].Obj_defeated = true;
+//maybe make global return and monster defeated variables then once back in
+//over world room look up instance and set variables accordingly
+//instance_id[global.fighting_this_monster].returned = true;
+room_goto(global.room_to_return_to);
 </string>
           </argument>
         </arguments>
@@ -149,7 +153,7 @@ if(boss.Current_HP&lt;=100 and Cutscene_Started==0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Cave_room_1)
+            <string>room_goto(global.room_to_return_to);
 </string>
           </argument>
         </arguments>

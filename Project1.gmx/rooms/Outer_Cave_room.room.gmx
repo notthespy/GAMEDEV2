@@ -54,6 +54,7 @@
     <instance objName="Player_Overworld_Object" x="160" y="128" name="inst_1AA1FF74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Up_stairs_Object" x="960" y="384" name="inst_9EABE7F8" locked="0" code="warp_x = 64;&#xA;warp_y = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Start_Cutscene_Object" x="192" y="160" name="inst_DC230FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Info_cloud_object" x="448" y="192" name="inst_10FA94E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

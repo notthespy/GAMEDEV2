@@ -23,7 +23,8 @@
     <sprite>sprites\Custom_Font_Sprite</sprite>
     <sprite>sprites\Ninja_Battle_Sprite</sprite>
     <sprite>sprites\Rock_sprite</sprite>
-    <sprite>sprites\sprite16</sprite>
+    <sprite>sprites\Kosenjobi_Sprite</sprite>
+    <sprite>sprites\Shachikoko_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -45,7 +46,21 @@
     <object>objects\Minion_Battle_Box_Object</object>
     <object>objects\Test_Battle_Miko_Object</object>
     <object>objects\Test_All_Characters_Battle_Box_Object</object>
-    <object>objects\K1_S1_J1_Battle_Object</object>
+    <object>objects\K3_2_Battle_Object</object>
+    <object>objects\J3_2_Battle_Object</object>
+    <object>objects\S3_2_Battle_Object</object>
+    <object>objects\K1_S2_2_Battle_Object</object>
+    <object>objects\S1_J2_2_Battle_Object</object>
+    <object>objects\J1_K2_2_Battle_Object</object>
+    <object>objects\K2_2_Battle_Object</object>
+    <object>objects\K1_S1_2_Battle_Object</object>
+    <object>objects\K1_J1_2_Battle_Object</object>
+    <object>objects\J1_S1_2_Battle_Object</object>
+    <object>objects\S2_2_Battle_Object</object>
+    <object>objects\J2_2_Battle_Object</object>
+    <object>objects\K1_2_Battle_Object</object>
+    <object>objects\S1_2_Battle_Object</object>
+    <object>objects\J1_2_Battle_Object</object>
     <object>objects\K1_Battle_Object</object>
     <object>objects\S1_Battle_Object</object>
     <object>objects\J1_Battle_Object</object>

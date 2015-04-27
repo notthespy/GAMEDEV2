@@ -1,47 +1,83 @@
 -Per Battle-
-Kosenjobi = KO
-Shachihoko = SH
-Kijimuna = KI
+Kosenjobi 	= K
+Shachihoko 	= S
+Jubokko 	= J
 
 Room 1-1 and 1-2, either:
-1 KO, 1 SH, 1 KI
+1K
+1S
+1J
 
 Room 1-3, Enter Kyoko
 
 Room 1-3, either:
-1 KO, 1 SH, 1 KI
-2 KO, 2 SH, 2 KI
+1K
+1S
+1J
+2K
+2S
+2J
 
 Boss 1: Oni
 
 Room 2-1, either:
-1 KO, 1 SH, 1 KI
-2 KO, 2 SH, 2 KI
+1K
+1S
+1J
+2K
+2S
+2J
 
 Room 2-2, either:
-2 KO, 2 SH, 2 KI
-1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
+2K
+2S
+2J
+1K1S
+1K1J
+1S1J
 
 Room 2-3, either: 
-2 KO, 2 SH, 2 KI
-1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
-3 KO, 3 SH, 3 KI
+2K
+2S
+2J
+1K1S
+1K1J
+1S1J
+3K
+3S
+3J
 
 Boss 2: Kyuubei
 
 Room 3-1, either:
-2 KO, 2 SH, 2 KI
-1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
-3 KO, 3 SH, 3 KI
+2K
+2S
+2J
+1K1S
+1K1J
+1S1J
+3K
+3S
+3J
 
 Room 3-2, either:
-1 KO/1 SH, 1 KO/1 KI, 1 SH/1 KI
-3 KO, 3 SH, 3 KI
-1 KO/2 SH, 1 SH/2 KI, 1 KI/2 KO
+1K1S
+1K1J
+1S1J
+3K
+3S
+3J
+1K2S
+1S2J
+1J2K
 
 Room 3-3, either:
-3 KO, 3 SH, 3 KI
-1 KO/2 SH, 1 SH/2 KI, 1 KI/2 KO
-1 KO/1 SH/1 KI
+3K
+3S
+3J
+1K2S
+1S2J
+1J2K
+1K1S1J
 
 Boss 3: Orochi

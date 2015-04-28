@@ -225,6 +225,7 @@ Obj_Yspeed=0;
         Obj_Yspeed*=-1;
     }
 }
+sprite_index=Player_Overworld_sprite
 Orientation=3;
 </string>
           </argument>
@@ -277,6 +278,7 @@ Player_Overworld_Object.y += Obj_Yspeed;
         Obj_Yspeed*=-1;
     }
 }
+sprite_index=Player_Overworld_sprite
 Orientation=0;
 </string>
           </argument>
@@ -329,7 +331,8 @@ Player_Overworld_Object.y += Obj_Yspeed;
         Obj_Xspeed*=-1;
     }
 }
-Orientation=2
+//Orientation=2
+sprite_index=Player_Overworld_Right_Sprite
 </string>
           </argument>
         </arguments>
@@ -381,7 +384,8 @@ Player_Overworld_Object.x += Obj_Xspeed;
         Obj_Xspeed*=-1;
     }
 }
-Orientation=1;
+sprite_index=Player_Overworld_Left_Sprite
+//Orientation=1;
 </string>
           </argument>
         </arguments>

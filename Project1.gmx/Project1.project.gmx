@@ -25,6 +25,10 @@
     <sprite>sprites\Rock_sprite</sprite>
     <sprite>sprites\Kosenjobi_Sprite</sprite>
     <sprite>sprites\Shachikoko_Sprite</sprite>
+    <sprite>sprites\Jubokko_Sprite</sprite>
+    <sprite>sprites\Oni_Sprite</sprite>
+    <sprite>sprites\Orochi_Sprite</sprite>
+    <sprite>sprites\Kyuubei_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -68,6 +72,9 @@
     <object>objects\K1_2_Battle_Object</object>
     <object>objects\S1_2_Battle_Object</object>
     <object>objects\J1_2_Battle_Object</object>
+    <object>objects\Oni_Boss_Battle_Object</object>
+    <object>objects\Orochi_Boss_Battle_Object</object>
+    <object>objects\Kyuubei_Boss_Battle_Object</object>
     <object>objects\K1_Battle_Object</object>
     <object>objects\S1_Battle_Object</object>
     <object>objects\J1_Battle_Object</object>
@@ -98,6 +105,9 @@
     <object>objects\Kosenjobi_Battle_Object</object>
     <object>objects\Shachihoko_Battle_Object</object>
     <object>objects\Jubokko_Battle_Object</object>
+    <object>objects\Oni_Battle_Object</object>
+    <object>objects\Orochi_Battle_Object</object>
+    <object>objects\Kyuubei_Battle_Object</object>
     <object>objects\Wall_Object</object>
     <object>objects\Target_room_warp_Object</object>
     <object>objects\Room_Object</object>

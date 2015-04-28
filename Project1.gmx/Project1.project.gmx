@@ -9,6 +9,8 @@
   <sprites name="sprites">
     <sprite>sprites\Player_Battle_Temp_Sprite</sprite>
     <sprite>sprites\Player_Overworld_sprite</sprite>
+    <sprite>sprites\Player_Overworld_Left_Sprite</sprite>
+    <sprite>sprites\Player_Overworld_Right_Sprite</sprite>
     <sprite>sprites\Battle_Box_Sprite_Temp</sprite>
     <sprite>sprites\Select_Arrow_Temp_Sprite</sprite>
     <sprite>sprites\Boss_Battle_Temp_Sprite</sprite>

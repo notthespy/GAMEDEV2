@@ -10,7 +10,7 @@
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.level = 2;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="Field_ground" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -488,7 +488,16 @@
     <instance objName="Up_stairs_Object" x="3328" y="640" name="inst_17D4173C" locked="0" code="warp_x = 96;&#xA;warp_y = 736;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Cutscene_31" x="3456" y="640" name="inst_562E9E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="Field_ceiling" x="1984" y="192" w="64" h="64" xo="0" yo="0" id="10000106" name="inst_F67241EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="256" w="64" h="64" xo="0" yo="0" id="10000107" name="inst_674B0DCF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="320" w="64" h="64" xo="0" yo="0" id="10000108" name="inst_1724B28A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="384" w="64" h="64" xo="0" yo="0" id="10000109" name="inst_29EDE58B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="448" w="64" h="64" xo="0" yo="0" id="10000110" name="inst_9DF2E3BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="512" w="64" h="64" xo="0" yo="0" id="10000111" name="inst_C7CAAA39" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="576" w="64" h="64" xo="0" yo="0" id="10000112" name="inst_7F6122B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Field_ceiling" x="1984" y="640" w="64" h="64" xo="0" yo="0" id="10000113" name="inst_01E15C7E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

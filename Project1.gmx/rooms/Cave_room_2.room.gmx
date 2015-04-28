@@ -190,7 +190,18 @@
     <instance objName="Battle_warp_Object_11" x="352" y="256" name="inst_80B9DC86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Cutscene_12" x="288" y="480" name="inst_372FCF1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="Cave_ceiling" x="448" y="416" w="64" h="64" xo="0" yo="0" id="10000042" name="inst_BCCD5F23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="512" y="416" w="64" h="64" xo="0" yo="0" id="10000043" name="inst_2A437F42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="480" y="352" w="64" h="64" xo="0" yo="0" id="10000044" name="inst_48CF888E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="544" y="352" w="64" h="64" xo="0" yo="0" id="10000045" name="inst_398AE7B1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="608" y="352" w="64" h="64" xo="0" yo="0" id="10000046" name="inst_8F5987B3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="448" y="480" w="64" h="64" xo="0" yo="0" id="10000047" name="inst_3BCDF395" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="448" y="544" w="64" h="64" xo="0" yo="0" id="10000048" name="inst_68C14F02" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="448" y="608" w="64" h="64" xo="0" yo="0" id="10000049" name="inst_DCD4C5F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="448" y="672" w="64" h="64" xo="0" yo="0" id="10000050" name="inst_B7021622" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="448" y="736" w="64" h="64" xo="0" yo="0" id="10000051" name="inst_652F0B1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

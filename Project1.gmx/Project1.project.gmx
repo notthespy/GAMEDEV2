@@ -29,12 +29,19 @@
     <background>background\Batlle_Temp_Background</background>
     <background>background\Field1_temp_background</background>
     <background>background\Battle_Background</background>
+    <background>background\Cave_ceiling</background>
+    <background>background\Cave_ground</background>
+    <background>background\City_ground</background>
+    <background>background\City_ceiling</background>
+    <background>background\Field_ground</background>
+    <background>background\Field_ceiling</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\src_start_menu.gml</script>
     <script>scripts\src_wall_collision.gml</script>
     <script>scripts\src_Rock_collision.gml</script>
+    <script>scripts\Change_sprite_with_lvl_script.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Player_Battle_Object</object>
@@ -57,6 +64,7 @@
     <object>objects\Battle_warp_Object_11</object>
     <object>objects\Battle_warp_Object_12</object>
     <object>objects\Up_stairs_Object</object>
+    <object>objects\Next_lvl_stairs_Object</object>
     <object>objects\Down_stairs_Object</object>
     <object>objects\Cutscene_Object</object>
     <object>objects\Start_Cutscene_Object</object>
@@ -79,7 +87,6 @@
     <object>objects\Target_room_warp_Object</object>
     <object>objects\Room_Object</object>
     <object>objects\Rock_object</object>
-    <object>objects\Info_cloud_object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

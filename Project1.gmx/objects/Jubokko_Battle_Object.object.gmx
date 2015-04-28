@@ -29,6 +29,7 @@
 Max_HP=80
 Can_Attack=1
 Dead=0
+Type="Jubokko"
 </string>
           </argument>
         </arguments>

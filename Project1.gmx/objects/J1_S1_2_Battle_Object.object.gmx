@@ -231,7 +231,7 @@ draw_text(650,100,playerhealth)
 mikohealth=string(playerarr[1].Current_HP)+"/"+string(playerarr[1].Max_HP)
 draw_text(640,340,mikohealth)
 ninjahealth=string(playerarr[2].Current_HP)+"/"+string(playerarr[2].Max_HP)
-draw_text(640,200)
+draw_text(640,200,ninjahealth)
 if(minarr[0].Current_HP&gt;0){
     minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
     draw_text(365,100,minion0health)

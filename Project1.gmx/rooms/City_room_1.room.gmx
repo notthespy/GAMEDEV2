@@ -114,7 +114,30 @@
     <instance objName="Battle_warp_Object_11" x="224" y="672" name="inst_FD114D31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="City_ground" x="512" y="0" w="64" h="64" xo="0" yo="0" id="10000073" name="inst_A00C2F88" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ground" x="512" y="0" w="64" h="64" xo="0" yo="0" id="10000073" name="inst_A00C2F88" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="224" y="96" w="64" h="64" xo="0" yo="0" id="10000381" name="inst_B144C636" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="224" y="160" w="64" h="64" xo="0" yo="0" id="10000382" name="inst_88FFE701" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="640" y="0" w="64" h="64" xo="0" yo="0" id="10000383" name="inst_FE931EB5" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="640" y="64" w="64" h="64" xo="0" yo="0" id="10000384" name="inst_0E53D87B" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="640" y="128" w="64" h="64" xo="0" yo="0" id="10000385" name="inst_91BD00DE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="640" y="192" w="64" h="64" xo="0" yo="0" id="10000386" name="inst_9C60A878" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="640" y="256" w="64" h="64" xo="0" yo="0" id="10000387" name="inst_9DA5B854" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="640" y="320" w="64" h="64" xo="0" yo="0" id="10000388" name="inst_55E9663E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="480" y="352" w="64" h="64" xo="0" yo="0" id="10000389" name="inst_D6D37770" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="480" y="416" w="64" h="64" xo="0" yo="0" id="10000390" name="inst_152A3BEC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="480" y="480" w="64" h="64" xo="0" yo="0" id="10000391" name="inst_BFC918C6" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="480" y="544" w="64" h="64" xo="0" yo="0" id="10000392" name="inst_4500E934" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="352" y="608" w="64" h="64" xo="0" yo="0" id="10000393" name="inst_95ACBC0E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="352" y="672" w="64" h="64" xo="0" yo="0" id="10000394" name="inst_8E3F9E31" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="352" y="736" w="64" h="64" xo="0" yo="0" id="10000395" name="inst_F69E246A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="352" y="800" w="64" h="64" xo="0" yo="0" id="10000396" name="inst_01B5FEAB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="608" y="768" w="64" h="64" xo="0" yo="0" id="10000397" name="inst_52C0E020" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="608" y="832" w="64" h="64" xo="0" yo="0" id="10000398" name="inst_C98CE2F2" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="768" y="768" w="64" h="64" xo="0" yo="0" id="10000399" name="inst_F2D901C4" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="768" y="832" w="64" h="64" xo="0" yo="0" id="10000400" name="inst_B98BEE1A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="64" y="704" w="64" h="64" xo="0" yo="0" id="10000401" name="inst_A862C31A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="64" y="768" w="64" h="64" xo="0" yo="0" id="10000402" name="inst_64E5D226" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_ceiling" x="64" y="832" w="64" h="64" xo="0" yo="0" id="10000403" name="inst_3BEF35CA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

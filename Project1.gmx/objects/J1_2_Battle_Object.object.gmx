@@ -133,7 +133,7 @@ if(playerarr[0].Current_HP&lt;=0 and playerarr[1].Current_HP&lt;=0 and playerarr
     
 }
 if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
-    Window_Text="YOU HAVE KILLED MINION "+string(Enemy_Index)
+    Window_Text="YOU HAVE KILLED "+string(minarr[Enemy_Index].Type)+" "+string(Enemy_Index)
     minarr[Enemy_Index].Dead=1
     minarr[Enemy_Index].visible=false
     alarm[1]=30
@@ -142,19 +142,19 @@ if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
 if(Player_Turn==0){
         if(minarr[Enemy_Index].Dead==0){
             if(minarr[Enemy_Index].Can_Attack==1){
-                Window_Text="MINION "+string(Enemy_Index)+" USED PECK"
+                Window_Text=string(minarr[Enemy_Index].Type)+" "+string(Enemy_Index)+" USED TWIG WHIP"
                 if(playerarr[Character_Turn].Protected!=1){
-                    playerarr[Character_Turn].Current_HP-=15
+                    playerarr[Character_Turn].Current_HP-=20
                     if(playerarr[Character_Turn].Retaliate==true){
                         minarr[Enemy_Index].Current_Health-=5
                     }
                 }
             }else{
-                Window_Text="MINION"+string(Enemy_Index)+" COULD NOT ATTACK"
+                Window_Text=string(minarr[Enemy_Index].Type)+" "+string(Enemy_Index)+" COULD NOT ATTACK"
                 minarr[Enemy_Index].Can_Attack=1
             }
         }else{
-            Window_Text="MINION"+string(Enemy_Index)+" IS DEAD"
+            Window_Text=string(minarr[Enemy_Index].Type)+" "+string(Enemy_Index)+" IS DEAD"
         }
         Enemy_Index+=1
     if(Enemy_Index&gt;Enemy_Number){

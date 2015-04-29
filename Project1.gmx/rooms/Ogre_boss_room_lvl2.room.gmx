@@ -335,7 +335,7 @@
     <instance objName="Target_room_warp_Object" x="1248" y="1440" name="inst_C600C56D" locked="0" code="warp_x = 1312;&#xA;warp_y = 1440;&#xA;target_room = Ogre_boss_room_lvl3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object_11" x="896" y="1120" name="inst_AED02403" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object_11" x="512" y="1440" name="inst_179A074F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object_11" x="96" y="1152" name="inst_541B258C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="128" y="1152" name="inst_541B258C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Up_stairs_Object" x="1120" y="96" name="inst_6276352E" locked="0" code="warp_x = 1088;&#xA;warp_y = 160;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

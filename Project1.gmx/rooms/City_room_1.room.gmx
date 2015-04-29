@@ -76,7 +76,7 @@
     <instance objName="Wall_Object" x="64" y="800" name="inst_8A71236B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="64" y="736" name="inst_F92CEF53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="64" y="864" name="inst_AFB2EDF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object_11" x="224" y="672" name="inst_FD114D31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="224" y="704" name="inst_FD114D31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="224" y="800" name="inst_D442B6F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Rock_object" x="224" y="864" name="inst_74DC6071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Object" x="32" y="576" name="inst_F7BAED1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

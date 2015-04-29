@@ -5,12 +5,29 @@ global.OPlayerY = Player_Overworld_Object.y;//players current y
 
 instance_destroy();
 
-switch (global.level)
+enemy = random_range(0,2);
+
+if(global.level = 0)
 {
-    case 0: room_goto(Minion_Battle_Room); break;
+    room_goto(First_Boss_Battle_Room_11);
+}
 
-    case 1: room_goto(Minion_Battle_Room); break;
-    
-    case 2: room_goto(Minion_Battle_Room); break;
+if(global.level = 1)
+{
+    switch(enemy)
+    {
+        case 0: room_goto(First_Boss_Battle_Room_11); break;
+        case 1: room_goto(First_Boss_Battle_Room_11); break;
+        case 2: room_goto(First_Boss_Battle_Room_11); break;
+    }
+}
 
+if(global.level = 2)
+{
+    switch(enemy)
+    {
+        case 0: room_goto(First_Boss_Battle_Room_11); break;
+        case 1: room_goto(First_Boss_Battle_Room_11); break;
+        case 2: room_goto(First_Boss_Battle_Room_11); break;
+    }
 }

@@ -31,6 +31,7 @@
     <sprite>sprites\Oni_Sprite</sprite>
     <sprite>sprites\Orochi_Sprite</sprite>
     <sprite>sprites\Kyuubei_Sprite</sprite>
+    <sprite>sprites\Overworld_Boss_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Batlle_Temp_Background</background>
@@ -65,6 +66,7 @@
       <object>objects\Target_room_warp_Object</object>
       <object>objects\Wall_Object</object>
       <object>objects\Rock_object</object>
+      <object>objects\Boss_battle_warp_Object</object>
     </objects>
     <object>objects\Player_Battle_Object</object>
     <object>objects\Miko_Battle_Object</object>

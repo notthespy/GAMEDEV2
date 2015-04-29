@@ -7,10 +7,10 @@ instance_destroy();
 
 switch (global.level)
 {
-    case 0: room_goto(First_Boss_Battle_Room_11); break;
+    case 0: room_goto(Oni_Battle_Room); break;
 
-    case 1: room_goto(First_Boss_Battle_Room_12); break;
+    case 1: room_goto(Kyuubei_Battle_Room); break;
     
-    case 2: room_goto(First_Boss_Battle_Room_11); break;
+    case 2: room_goto(Orochi_Battle_Room); break;
 
 }

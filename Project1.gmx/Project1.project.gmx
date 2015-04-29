@@ -49,8 +49,23 @@
     <script>scripts\src_wall_collision.gml</script>
     <script>scripts\src_Rock_collision.gml</script>
     <script>scripts\Change_sprite_with_lvl_script.gml</script>
+    <script>scripts\Go_to_minion_battle_script.gml</script>
+    <script>scripts\Go_to_boss_battle_script.gml</script>
+    <script>scripts\Return_from_battle_script.gml</script>
   </scripts>
   <objects name="objects">
+    <objects name="Over_world_objects">
+      <object>objects\Start_Field</object>
+      <object>objects\Player_Overworld_Object</object>
+      <object>objects\Battle_warp_Object_11</object>
+      <object>objects\Battle_warp_Object_12</object>
+      <object>objects\Up_stairs_Object</object>
+      <object>objects\Next_lvl_stairs_Object</object>
+      <object>objects\Down_stairs_Object</object>
+      <object>objects\Target_room_warp_Object</object>
+      <object>objects\Wall_Object</object>
+      <object>objects\Rock_object</object>
+    </objects>
     <object>objects\Player_Battle_Object</object>
     <object>objects\Miko_Battle_Object</object>
     <object>objects\Ninja_Battle_Object</object>
@@ -82,14 +97,7 @@
     <object>objects\J1_Battle_Object</object>
     <object>objects\Boss_Battle_Object</object>
     <object>objects\File_Creator_Object</object>
-    <object>objects\Player_Overworld_Object</object>
-    <object>objects\Start_Field</object>
     <object>objects\Attack_Object</object>
-    <object>objects\Battle_warp_Object_11</object>
-    <object>objects\Battle_warp_Object_12</object>
-    <object>objects\Up_stairs_Object</object>
-    <object>objects\Next_lvl_stairs_Object</object>
-    <object>objects\Down_stairs_Object</object>
     <object>objects\Cutscene_Object</object>
     <object>objects\Start_Cutscene_Object</object>
     <object>objects\Cutscene_12</object>
@@ -110,10 +118,7 @@
     <object>objects\Oni_Battle_Object</object>
     <object>objects\Orochi_Battle_Object</object>
     <object>objects\Kyuubei_Battle_Object</object>
-    <object>objects\Wall_Object</object>
-    <object>objects\Target_room_warp_Object</object>
     <object>objects\Room_Object</object>
-    <object>objects\Rock_object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

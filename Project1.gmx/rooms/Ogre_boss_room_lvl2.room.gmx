@@ -464,7 +464,6 @@
     <tile bgName="Cave_ceiling" x="192" y="1216" w="64" h="64" xo="0" yo="0" id="10001541" name="inst_142620FA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="192" y="1280" w="64" h="64" xo="0" yo="0" id="10001542" name="inst_77E851E0" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="192" y="1344" w="64" h="64" xo="0" yo="0" id="10001543" name="inst_ED8EDAAF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Cave_ceiling" x="192" y="1408" w="64" h="64" xo="0" yo="0" id="10001544" name="inst_FC55FDC0" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="0" y="1152" w="64" h="64" xo="0" yo="0" id="10001545" name="inst_6DB0D813" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="0" y="1216" w="64" h="64" xo="0" yo="0" id="10001546" name="inst_634624A2" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="0" y="1280" w="64" h="64" xo="0" yo="0" id="10001547" name="inst_C97FD34A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

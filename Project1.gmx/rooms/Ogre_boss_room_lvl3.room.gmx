@@ -787,6 +787,22 @@
     <tile bgName="Cave_ceiling" x="576" y="64" w="64" h="64" xo="0" yo="0" id="10001928" name="inst_0489B8A3" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="640" y="64" w="64" h="64" xo="0" yo="0" id="10001929" name="inst_A54FAF74" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="704" y="64" w="64" h="64" xo="0" yo="0" id="10001930" name="inst_71F806EB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="448" w="64" h="64" xo="0" yo="0" id="10003542" name="inst_DDE97ECD" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="544" w="64" h="64" xo="0" yo="0" id="10003543" name="inst_502BF8EA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="512" w="64" h="64" xo="0" yo="0" id="10003544" name="inst_1DB2BD2B" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="608" w="64" h="64" xo="0" yo="0" id="10003545" name="inst_DDF163EC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="672" w="64" h="64" xo="0" yo="0" id="10003546" name="inst_62E904F4" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="736" w="64" h="64" xo="0" yo="0" id="10003547" name="inst_E226F25A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="800" w="64" h="64" xo="0" yo="0" id="10003548" name="inst_3C787640" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="864" w="64" h="64" xo="0" yo="0" id="10003549" name="inst_13A8F880" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="928" w="64" h="64" xo="0" yo="0" id="10003556" name="inst_12D005F3" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="992" w="64" h="64" xo="0" yo="0" id="10003557" name="inst_26978BC9" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="1056" w="64" h="64" xo="0" yo="0" id="10003558" name="inst_5255F1ED" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="1120" w="64" h="64" xo="0" yo="0" id="10003559" name="inst_7E37EAC8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="1184" w="64" h="64" xo="0" yo="0" id="10003560" name="inst_3FDADB55" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="1248" w="64" h="64" xo="0" yo="0" id="10003561" name="inst_23A9B71E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="1312" w="64" h="64" xo="0" yo="0" id="10003562" name="inst_F4050A42" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="1664" y="1376" w="64" h="64" xo="0" yo="0" id="10003563" name="inst_94028D38" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

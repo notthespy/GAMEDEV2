@@ -276,14 +276,6 @@ if(minarr[0].Current_HP&gt;0){
     minion0health=string(minarr[0].Current_HP)+"/"+string(minarr[0].Max_HP)
     draw_text(365,100,minion0health)
 }
-if(minarr[1].Current_HP&gt;0){
-    minion1health=string(minarr[1].Current_HP)+"/"+string(minarr[1].Max_HP)
-    draw_text(160,240,minion1health)
-}
-if(minarr[2].Current_HP&gt;0){
-    minion2health=string(minarr[2].Current_HP)+"/"+string(minarr[2].Max_HP)
-    draw_text(365,350,minion2health)
-}
 if(Cutscene_Time==1){
     draw_text(100,100,Window_Text)
 }

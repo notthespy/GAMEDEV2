@@ -9,7 +9,7 @@ switch (global.level)
 {
     case 0: room_goto(First_Boss_Battle_Room_11); break;
 
-    case 1: room_goto(First_Boss_Battle_Room_11); break;
+    case 1: room_goto(First_Boss_Battle_Room_12); break;
     
     case 2: room_goto(First_Boss_Battle_Room_11); break;
 

@@ -34,6 +34,8 @@ Left=0;
 image_speed=0;
 MoveX=0;
 MoveY=0;
+APress=0;
+DPress=0;
 </string>
           </argument>
         </arguments>
@@ -225,8 +227,10 @@ Obj_Yspeed=0;
         Obj_Yspeed*=-1;
     }
 }
-sprite_index=Player_Overworld_sprite
-Orientation=3;
+if(APress==0 and DPress==0){
+    sprite_index=Player_Overworld_sprite
+    Orientation=3;
+}
 </string>
           </argument>
         </arguments>
@@ -278,8 +282,10 @@ Player_Overworld_Object.y += Obj_Yspeed;
         Obj_Yspeed*=-1;
     }
 }
-sprite_index=Player_Overworld_sprite
-Orientation=0;
+if(APress==0 and DPress=0){
+    Orientation=0;
+    sprite_index=Player_Overworld_sprite
+}
 </string>
           </argument>
         </arguments>
@@ -333,6 +339,7 @@ Player_Overworld_Object.y += Obj_Yspeed;
 }
 //Orientation=2
 sprite_index=Player_Overworld_Right_Sprite
+DPress=1;
 </string>
           </argument>
         </arguments>
@@ -385,7 +392,7 @@ Player_Overworld_Object.x += Obj_Xspeed;
     }
 }
 sprite_index=Player_Overworld_Left_Sprite
-//Orientation=1;
+APress=1;
 </string>
           </argument>
         </arguments>
@@ -443,47 +450,95 @@ if(MoveX==x and MoveY==y){
     Left=0
     image_index=Orientation
 }else{
-    if(Time!=5){
-        Time+=1
-    }else{
-        Time=0
-        if(Left==0){
-            Left=1
+    //if(APress==0 and DPress==0){
+        if(Time!=5){
+            Time+=1
         }else{
-            Left=0
+            Time=0
+            if(Left==0){
+                Left=1
+            }else{
+                Left=0
+            }
         }
-    }
-    if(Orientation==0){
-        if(Left==0){
-            image_index=4
-        }else{
-            image_index=5
+        if(Orientation==0){
+            if(Left==0){
+                image_index=4
+            }else{
+                image_index=5
+            }
         }
-    }
-    if(Orientation==1){
-        if(Left==0){
-            image_index=6
-        }else{
-            image_index=7
+        //if(Orientation==1){
+        //    if(Left==0){
+        //        image_index=6
+        //    }else{
+        //        image_index=7
+        //    }
+        //}
+        //if(Orientation==2){
+        //    if(Left==0){
+        //        image_index=8
+        //    }else{
+        //        image_index=9
+        //    }
+        //}
+        if(Orientation==3){
+            if(Left=0){
+                image_index=10
+            }else{
+                image_index=11
+            }
         }
-    }
-    if(Orientation==2){
-        if(Left==0){
-            image_index=8
-        }else{
-            image_index=9
-        }
-    }
-    if(Orientation==3){
-        if(Left=0){
-            image_index=10
-        }else{
-            image_index=11
-        }
-    }
+   // }
 }
 MoveX=x
 MoveY=y
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>DPress=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="65">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>APress=0;
 </string>
           </argument>
         </arguments>

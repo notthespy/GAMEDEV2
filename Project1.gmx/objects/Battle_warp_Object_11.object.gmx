@@ -26,9 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>Obj_Xspeed = 1;
-Obj_Yspeed = 6;
 Obj_defeated = false;
-returned = false;
+image_speed = 5;
 </string>
           </argument>
         </arguments>
@@ -83,12 +82,7 @@ returned = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_defeated == true and returned == true)
-{
-instance_destroy();
-}
-
-if(Obj_defeated == false and returned == true)
+            <string>if(Obj_defeated == false)
 {
 alarm[0] = 30;
 }

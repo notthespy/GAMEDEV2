@@ -9,8 +9,8 @@ switch (global.level)
 {
     case 0: room_goto(Oni_Battle_Room); break;
 
-    case 1: room_goto(Kyuubei_Battle_Room); break;
+    case 1: room_goto(Orochi_Battle_Room); break;
     
-    case 2: room_goto(Orochi_Battle_Room); break;
+    case 2: room_goto(Kyuubei_Battle_Room); break;
 
 }

@@ -123,6 +123,27 @@
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
     <room>rooms\First_Boss_Battle_Room_11</room>
+    <room>rooms\K3_2_Battle_Room</room>
+    <room>rooms\J3_2_Battle_Room</room>
+    <room>rooms\S3_2_Battle_Room</room>
+    <room>rooms\K1_S2_2_Battle_Room</room>
+    <room>rooms\S1_J2_2_Battle_Room</room>
+    <room>rooms\J1_K2_2_Battle_Room</room>
+    <room>rooms\K1_S1_2_Battle_Room</room>
+    <room>rooms\K1_J1_2_Battle_Room</room>
+    <room>rooms\J1_S1_2_Battle_Room</room>
+    <room>rooms\S2_2_Battle_Room</room>
+    <room>rooms\K2_2_Battle_Room</room>
+    <room>rooms\J2_2_Battle_Room</room>
+    <room>rooms\K1_2_Battle_Room</room>
+    <room>rooms\J1_2_Battle_Room</room>
+    <room>rooms\S1_2_Battle_Room</room>
+    <room>rooms\K1_Battle_Room</room>
+    <room>rooms\S1_Battle_Room</room>
+    <room>rooms\J1_Battle_Room</room>
+    <room>rooms\Oni_Battle_Room</room>
+    <room>rooms\Orochi_Battle_Room</room>
+    <room>rooms\Kyuubei_Battle_Room</room>
     <room>rooms\First_Boss_Battle_Room_12</room>
     <room>rooms\Test_Battle_Miko_Room</room>
     <room>rooms\Test_Battle_All_Room</room>

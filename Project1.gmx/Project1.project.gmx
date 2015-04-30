@@ -53,13 +53,16 @@
     <script>scripts\Go_to_minion_battle_script.gml</script>
     <script>scripts\Go_to_boss_battle_script.gml</script>
     <script>scripts\Return_from_battle_script.gml</script>
+    <script>scripts\Run_from_minion_battle_script.gml</script>
+    <script>scripts\Return_from_boss_script.gml</script>
+    <script>scripts\Run_from_boss_script.gml</script>
   </scripts>
+  <shaders name="shaders"/>
   <objects name="objects">
     <objects name="Over_world_objects">
       <object>objects\Start_Field</object>
       <object>objects\Player_Overworld_Object</object>
       <object>objects\Battle_warp_Object_11</object>
-      <object>objects\Battle_warp_Object_12</object>
       <object>objects\Up_stairs_Object</object>
       <object>objects\Next_lvl_stairs_Object</object>
       <object>objects\Down_stairs_Object</object>

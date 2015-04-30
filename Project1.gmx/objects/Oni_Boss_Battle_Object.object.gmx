@@ -92,7 +92,7 @@ Num_Characters=2
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Return_from_battle_script</script>
+            <script>Return_from_boss_script</script>
           </argument>
           <argument>
             <kind>0</kind>

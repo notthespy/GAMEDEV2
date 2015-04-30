@@ -36,6 +36,54 @@ MoveX=0;
 MoveY=0;
 APress=0;
 DPress=0;
+returned = false;
+boss_returned = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(global.OPlayerX, global.OPlayerY, global.fighting_boss);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(global.OPlayerX, global.OPlayerY, global.fighting_this_monster);
 </string>
           </argument>
         </arguments>
@@ -156,8 +204,6 @@ if(instance_exists(Wall_Object)and(In_Battle==1)){
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="Battle_warp_Object_12">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -174,8 +220,29 @@ if(instance_exists(Wall_Object)and(In_Battle==1)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Obj_Xspeed=0;
-Obj_Yspeed=0;
+            <string>if (returned)
+{
+    if (!global.defeated)
+    {
+        returned = false;
+        alarm[0] = 30;
+    }
+    
+}
+
+if (boss_returned)
+{
+    if(!global.boss_beat)
+    {
+       alarm[1] = 30;
+    }
+    
+    else
+    {
+        global.boss_beat = false;
+        instance_activate_all();
+    }
+}
 </string>
           </argument>
         </arguments>

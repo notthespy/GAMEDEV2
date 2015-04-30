@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>Obj_Xspeed = 1;
 Obj_defeated = false;
-image_speed = 5;
+image_speed = .5;
 </string>
           </argument>
         </arguments>
@@ -82,10 +82,22 @@ image_speed = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Obj_defeated == false)
+            <string>if(id = global.fighting_this_monster)
 {
-alarm[0] = 30;
+    Obj_defeated = global.defeated;
+    
+    if(Obj_defeated)
+    {
+        instance_destroy();
+    }
+    
+    else
+    {
+        instance_activate_object(id);
+    }
 }
+
+//move_towards_point(object.x,object.y,speed)
 </string>
           </argument>
         </arguments>

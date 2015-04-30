@@ -192,10 +192,10 @@
     <instance objName="Rock_object" x="1216" y="1024" name="inst_19CB0D35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Down_stairs_Object" x="192" y="480" name="inst_EF3A2C06" locked="0" code="warp_x = 96;&#xA;warp_y = 704;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Up_stairs_Object" x="704" y="1408" name="inst_DD3E0FAF" locked="0" code="warp_x = 480;&#xA;warp_y = 1376;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object_11" x="64" y="96" name="inst_9E506F5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="32" y="96" name="inst_9E506F5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Battle_warp_Object_11" x="1024" y="1088" name="inst_C533CEF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object_11" x="1344" y="512" name="inst_5CF3200B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Battle_warp_Object_11" x="1024" y="160" name="inst_6F0DD7A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="1344" y="480" name="inst_5CF3200B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Battle_warp_Object_11" x="992" y="160" name="inst_6F0DD7A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Target_room_warp_Object" x="64" y="800" name="inst_B63FD1FF" locked="0" code="warp_x = 64;&#xA;warp_y = 800;&#xA;target_room = Snake_boss_room_lvl1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Target_room_warp_Object" x="1088" y="448" name="inst_4B2C45EA" locked="0" code="warp_x = 1120;&#xA;warp_y = 384;&#xA;target_room = Snake_boss_room_lvl1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

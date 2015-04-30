@@ -6,7 +6,7 @@ global.OPlayerY = Player_Overworld_Object.yprevious;//players current y
 //instance_deactivate_object(global.fighting_this_monster);
 instance_destroy();
 
-if(global.level = 0)
+if(room = Cave_room_1 or room = Cave_room_2)
 {
     enemy = irandom_range(0,2)
     switch(enemy)
@@ -18,7 +18,7 @@ if(global.level = 0)
     }
 }
 
-if(global.level = 1)
+if(room = Cave_room_3)
 {
     enemy = irandom_range(0,2)
     switch(enemy)

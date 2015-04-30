@@ -60,7 +60,10 @@ boss_returned = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(global.OPlayerX, global.OPlayerY, global.fighting_boss);
+            <string>if(room = global.room_to_return_to)
+{
+    instance_create(global.OPlayerX, global.OPlayerY, global.fighting_boss);
+}
 </string>
           </argument>
         </arguments>
@@ -83,7 +86,10 @@ boss_returned = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(global.OPlayerX, global.OPlayerY, global.fighting_this_monster);
+            <string>if( room = global.room_to_return_to)
+{
+    instance_create(global.OPlayerX, global.OPlayerY, global.fighting_this_monster);
+}
 </string>
           </argument>
         </arguments>

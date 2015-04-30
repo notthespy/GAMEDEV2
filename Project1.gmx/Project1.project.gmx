@@ -57,7 +57,6 @@
     <script>scripts\Return_from_boss_script.gml</script>
     <script>scripts\Run_from_boss_script.gml</script>
   </scripts>
-  <shaders name="shaders"/>
   <objects name="objects">
     <objects name="Over_world_objects">
       <object>objects\Start_Field</object>

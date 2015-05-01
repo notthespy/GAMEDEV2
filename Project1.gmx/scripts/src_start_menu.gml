@@ -10,6 +10,8 @@ switch (mpos)
     
     case 3: room_goto(K2_2_Battle_Room); break;
     
+    case 4: room_goto(J2_2_Battle_Room); break;
+    
     default: break;
 
 }

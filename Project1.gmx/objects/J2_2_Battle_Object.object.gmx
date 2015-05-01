@@ -159,10 +159,22 @@ if(playerarr[0].Current_HP&lt;=0 and playerarr[1].Current_HP&lt;=0 and playerarr
     exit
     
 }
-if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
-    Window_Text="YOU HAVE KILLED "+string(minarr[Enemy_Index].Type)+" "+string(Enemy_Index)
-    minarr[Enemy_Index].Dead=1
-    minarr[Enemy_Index].visible=false
+if(minarr[0].Current_HP&lt;=0 and minarr[0].Dead==0){
+    Window_Text="YOU HAVE KILLED "+string(minarr[0].Type)+" "+string(0)
+    minarr[0].Dead=1
+    minarr[0].visible=false
+    alarm[1]=30
+    exit
+}
+if(minarr[0].Dead==1 and minarr[1].Dead==1){
+    alarm[2]=30
+    Window_Text="YOU HAVE DEFEATED ALL THE MINIONS"
+    exit
+}
+if(minarr[1].Current_HP&lt;=0 and minarr[1].Dead==0){
+    Window_Text="YOU HAVE KILLED "+string(minarr[1].Type)+" "+string(1)
+    minarr[1].Dead=1
+    minarr[1].visible=false
     alarm[1]=30
     exit
 }

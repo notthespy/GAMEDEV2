@@ -354,19 +354,6 @@ if(Menu_Depth&gt;0){
             Select_Position++
         }
     }
-    if(Menu_Depth==2){
-        test_var=true
-        while(test_var){
-            if(Select_Position==2){
-                Select_Position=0
-            }else{
-                Select_Position++
-            }
-            if(minarr[Select_Position].Current_HP&gt;0){
-                test_var=false
-            }
-        }
-    }
 }
 </string>
           </argument>
@@ -403,19 +390,6 @@ if(Menu_Depth&gt;0){
             Select_Position=3
         }else{
             Select_Position--
-        }
-    }
-    if(Menu_Depth==2){
-        test_var=true
-        while(test_var){
-            if(Select_Position==0){
-                Select_Position=2
-            }else{
-                Select_Position--
-            }
-            if(minarr[Select_Position].Current_HP&gt;0){
-                test_var=false
-            }
         }
     }
 }

@@ -402,7 +402,7 @@ if(Menu_Depth&gt;0){
     if(Menu_Depth==2){
         test_var=true
         while(test_var){
-            if(Select_Position==2){
+            if(Select_Position==1){
                 Select_Position=0
             }else{
                 Select_Position++
@@ -454,7 +454,7 @@ if(Menu_Depth&gt;0){
         test_var=true
         while(test_var){
             if(Select_Position==0){
-                Select_Position=2
+                Select_Position=1
             }else{
                 Select_Position--
             }

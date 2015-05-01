@@ -236,7 +236,7 @@ if(minarr[0].Dead==1 and minarr[1].Dead==1){
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Return_from_battle_script</script>
+            <script>Run_from_minion_battle_script</script>
           </argument>
           <argument>
             <kind>0</kind>

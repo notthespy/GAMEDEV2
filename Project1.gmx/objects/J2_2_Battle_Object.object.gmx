@@ -41,7 +41,7 @@ Is_Pressed=0
 Window_Text=""
 Cutscene_Time=0
 Player_Turn=1
-Enemy_Number=2
+Enemy_Number=1
 Enemy_Index=0
 Attack_Num=0
 Attack_Minion=0
@@ -167,7 +167,7 @@ if(minarr[Enemy_Index].Current_HP&lt;=0 and minarr[Enemy_Index].Dead==0){
     exit
 }
 if(Player_Turn==0){
-        if(minarr[Enemy_Index].Dead==0){
+        if(minarr[Enemy_Index].Dead==1){
             if(minarr[Enemy_Index].Can_Attack==1){
                 Window_Text=string(minarr[Enemy_Index].Type)+" "+string(Enemy_Index)+" USED TWIG WHIP"
                 if(playerarr[Character_Turn].Protected!=1){

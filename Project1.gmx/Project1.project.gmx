@@ -43,6 +43,9 @@
     <background>background\City_ceiling</background>
     <background>background\Field_ground</background>
     <background>background\Field_ceiling</background>
+    <background>background\Cave_wall_tops</background>
+    <background>background\City_wall_tops</background>
+    <background>background\Field_wall_tops</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

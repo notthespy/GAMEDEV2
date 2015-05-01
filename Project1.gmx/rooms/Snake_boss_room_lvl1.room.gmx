@@ -219,6 +219,60 @@
     <tile bgName="City_ceiling" x="128" y="320" w="64" h="64" xo="0" yo="0" id="10000617" name="inst_465E9C5D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="City_ceiling" x="128" y="384" w="64" h="64" xo="0" yo="0" id="10000618" name="inst_0F2F79E8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="City_ceiling" x="128" y="448" w="64" h="64" xo="0" yo="0" id="10000619" name="inst_4886D7EE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="736" y="128" w="64" h="16" xo="0" yo="0" id="10004431" name="inst_ABFB537F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="448" y="320" w="64" h="16" xo="0" yo="0" id="10004432" name="inst_BBAD92AE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="512" y="320" w="64" h="16" xo="0" yo="0" id="10004433" name="inst_090462FF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="576" y="320" w="64" h="16" xo="0" yo="0" id="10004434" name="inst_6FA44617" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="640" y="320" w="64" h="16" xo="0" yo="0" id="10004435" name="inst_194B790D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="704" y="320" w="64" h="16" xo="0" yo="0" id="10004436" name="inst_BA728800" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="768" y="320" w="64" h="16" xo="0" yo="0" id="10004437" name="inst_1518B1FD" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="832" y="320" w="64" h="16" xo="0" yo="0" id="10004438" name="inst_4C91CB94" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="896" y="320" w="64" h="16" xo="0" yo="0" id="10004439" name="inst_C2CC740A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="960" y="320" w="64" h="16" xo="0" yo="0" id="10004440" name="inst_943003A6" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="128" y="512" w="64" h="16" xo="0" yo="0" id="10004441" name="inst_0DE3A918" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="192" y="512" w="64" h="16" xo="0" yo="0" id="10004442" name="inst_38586657" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="256" y="512" w="64" h="16" xo="0" yo="0" id="10004443" name="inst_4DC4E2DE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="320" y="512" w="64" h="16" xo="0" yo="0" id="10004444" name="inst_C489C73E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="384" y="512" w="64" h="16" xo="0" yo="0" id="10004445" name="inst_C1CA033E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="448" y="512" w="64" h="16" xo="0" yo="0" id="10004446" name="inst_D3011EA1" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="512" y="512" w="64" h="16" xo="0" yo="0" id="10004447" name="inst_8FB71693" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="576" y="512" w="64" h="16" xo="0" yo="0" id="10004448" name="inst_310594FC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="640" y="512" w="64" h="16" xo="0" yo="0" id="10004449" name="inst_ED4DBBC8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="704" y="512" w="64" h="16" xo="0" yo="0" id="10004450" name="inst_4D119BB0" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="768" y="512" w="64" h="16" xo="0" yo="0" id="10004451" name="inst_B2828512" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="832" y="512" w="64" h="16" xo="0" yo="0" id="10004452" name="inst_38B4DFDD" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1024" y="512" w="64" h="16" xo="0" yo="0" id="10004453" name="inst_8EFA204F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="0" y="704" w="64" h="16" xo="0" yo="0" id="10004454" name="inst_B8CDF38F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="64" y="704" w="64" h="16" xo="0" yo="0" id="10004455" name="inst_E94F44AC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="128" y="704" w="64" h="16" xo="0" yo="0" id="10004456" name="inst_93F77046" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="256" y="832" w="64" h="16" xo="0" yo="0" id="10004457" name="inst_5378636A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="320" y="832" w="64" h="16" xo="0" yo="0" id="10004458" name="inst_92A7A44A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="384" y="832" w="64" h="16" xo="0" yo="0" id="10004459" name="inst_8912C72F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="448" y="832" w="64" h="16" xo="0" yo="0" id="10004460" name="inst_4453D93D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="512" y="832" w="64" h="16" xo="0" yo="0" id="10004461" name="inst_F5D65DEB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="576" y="832" w="64" h="16" xo="0" yo="0" id="10004462" name="inst_EA1EF321" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="192" y="1280" w="64" h="16" xo="0" yo="0" id="10004463" name="inst_76F825B6" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="384" y="1408" w="64" h="16" xo="0" yo="0" id="10004464" name="inst_46E33B8B" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1024" y="1408" w="64" h="16" xo="0" yo="0" id="10004465" name="inst_E270F73D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1216" y="1280" w="64" h="16" xo="0" yo="0" id="10004466" name="inst_ACD24B16" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="832" y="832" w="64" h="16" xo="0" yo="0" id="10004467" name="inst_B21E4F75" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="896" y="832" w="64" h="16" xo="0" yo="0" id="10004468" name="inst_4E58F55E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="960" y="832" w="64" h="16" xo="0" yo="0" id="10004469" name="inst_EFFE66FF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1024" y="832" w="64" h="16" xo="0" yo="0" id="10004470" name="inst_7BCD4BB6" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1088" y="832" w="64" h="16" xo="0" yo="0" id="10004471" name="inst_3B3FD311" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1152" y="832" w="64" h="16" xo="0" yo="0" id="10004472" name="inst_F4264D83" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1280" y="704" w="64" h="16" xo="0" yo="0" id="10004473" name="inst_11D11B40" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1344" y="704" w="64" h="16" xo="0" yo="0" id="10004474" name="inst_226B852E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1408" y="704" w="64" h="16" xo="0" yo="0" id="10004475" name="inst_150719F7" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1088" y="512" w="64" h="16" xo="0" yo="0" id="10004476" name="inst_2FDE0AB5" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1152" y="512" w="64" h="16" xo="0" yo="0" id="10004477" name="inst_49B301FD" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1216" y="512" w="64" h="16" xo="0" yo="0" id="10004478" name="inst_AC799789" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1088" y="128" w="64" h="16" xo="0" yo="0" id="10004479" name="inst_DF2E0E0A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1152" y="128" w="64" h="16" xo="0" yo="0" id="10004480" name="inst_09AFBD89" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1216" y="128" w="64" h="16" xo="0" yo="0" id="10004481" name="inst_7E08676C" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1280" y="128" w="64" h="16" xo="0" yo="0" id="10004482" name="inst_4D84B8CE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1344" y="128" w="64" h="16" xo="0" yo="0" id="10004483" name="inst_E7F1650A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="City_wall_tops" x="1408" y="128" w="64" h="16" xo="0" yo="0" id="10004484" name="inst_A829B1A0" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

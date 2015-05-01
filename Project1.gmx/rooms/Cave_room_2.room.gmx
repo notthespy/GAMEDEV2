@@ -258,6 +258,32 @@
     <tile bgName="Cave_ceiling" x="896" y="96" w="64" h="64" xo="0" yo="0" id="10003900" name="inst_6D9DE039" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="480" y="352" w="64" h="64" xo="0" yo="0" id="10003901" name="inst_18A38390" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Cave_ceiling" x="544" y="352" w="64" h="64" xo="0" yo="0" id="10003902" name="inst_014D42C8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="96" y="128" w="64" h="64" xo="0" yo="0" id="10003951" name="inst_CEA6EC1E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="96" y="192" w="64" h="16" xo="0" yo="0" id="10003952" name="inst_08329E59" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="320" y="128" w="64" h="16" xo="0" yo="0" id="10003953" name="inst_C10A81DA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="384" y="128" w="64" h="16" xo="0" yo="0" id="10003954" name="inst_9AFBD393" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="448" y="128" w="64" h="16" xo="0" yo="0" id="10003955" name="inst_2BA71705" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="512" y="128" w="64" h="16" xo="0" yo="0" id="10003956" name="inst_7DAED20B" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="576" y="128" w="64" h="16" xo="0" yo="0" id="10003957" name="inst_ACE279A2" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="640" y="128" w="64" h="16" xo="0" yo="0" id="10003958" name="inst_2E387909" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="704" y="128" w="64" h="16" xo="0" yo="0" id="10003959" name="inst_AF1EBD0F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="704" y="192" w="64" h="64" xo="0" yo="0" id="10003960" name="inst_E9290171" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_ceiling" x="704" y="256" w="64" h="64" xo="0" yo="0" id="10003961" name="inst_71408513" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="128" y="608" w="64" h="16" xo="0" yo="0" id="10003962" name="inst_5ADDB12A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="192" y="608" w="64" h="16" xo="0" yo="0" id="10003963" name="inst_26CEDFBA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="256" y="608" w="64" h="16" xo="0" yo="0" id="10003964" name="inst_5E59ADED" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="320" y="608" w="64" h="16" xo="0" yo="0" id="10003965" name="inst_CCDCBC4A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="544" y="416" w="64" h="16" xo="0" yo="0" id="10003966" name="inst_4A0B00B0" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="704" y="320" w="64" h="16" xo="0" yo="0" id="10003967" name="inst_BCA90A9D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="768" y="320" w="64" h="16" xo="0" yo="0" id="10003968" name="inst_CDAEC6A9" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="832" y="320" w="64" h="16" xo="0" yo="0" id="10003969" name="inst_E6DB53BC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="896" y="320" w="64" h="16" xo="0" yo="0" id="10003970" name="inst_29D02AF9" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="960" y="320" w="64" h="16" xo="0" yo="0" id="10003971" name="inst_CA2ADB90" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="1024" y="320" w="64" h="16" xo="0" yo="0" id="10003972" name="inst_0A078B1A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="1152" y="768" w="64" h="16" xo="0" yo="0" id="10003973" name="inst_E1213307" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="224" y="288" w="64" h="16" xo="0" yo="0" id="10003974" name="inst_EF45D057" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="256" y="224" w="64" h="16" xo="0" yo="0" id="10003975" name="inst_1F26B057" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Cave_wall_tops" x="192" y="416" w="64" h="16" xo="0" yo="0" id="10003976" name="inst_36EF6760" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

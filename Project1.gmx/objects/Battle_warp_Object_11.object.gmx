@@ -82,23 +82,7 @@ image_speed = .5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(id = global.fighting_this_monster)
-{
-    Obj_defeated = global.defeated;
-    
-    if(Obj_defeated)
-    {
-        instance_destroy();
-    }
-    
-    else
-    {
-        instance_activate_object(id);
-    }
-}
-
-//move_towards_point(object.x,object.y,speed)
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

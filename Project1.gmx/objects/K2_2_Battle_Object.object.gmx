@@ -549,7 +549,9 @@ if(Menu_Depth&gt;0){
                 minarr[Select_Position].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage*playerarr[Character_Turn].Damage_Modifier
                 playerarr[Character_Turn].Damage_Modifier=1
             }else{
-                minarr[Select_Position].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage
+                if(minarr[Select_Position].Dead==0){
+                    minarr[Select_Position].Current_HP-=playerarr[Character_Turn].Attacks[Attack_Num].Damage
+                }
             }
             if(minarr[Select_Position].Current_HP&lt;0){
                 minarr[Select_Position].Current_HP=0

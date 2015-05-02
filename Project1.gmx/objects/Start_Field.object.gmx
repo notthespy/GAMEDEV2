@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu[0] = "LVL 1";
+            <string>menu[0] = "LVL 1/Start";
 menu[1] = "LVL 2";
 menu[2] = "LVL 3";
-menu[3] = "K2_2_battle";
-menu[4] = "J2_2_battle";
+//menu[3] = "K2_2_battle";
+//menu[4] = "J2_2_battle";
 
 space = 64;
 mpos = 0;

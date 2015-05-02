@@ -8,9 +8,9 @@ switch (mpos)
     
     case 2: room_goto(Field_room_1); global.level = 2; instance_create(32, 800, Player_Overworld_Object); break;
     
-    case 3: room_goto(Ogre_boss_room_final); global.level = 0; instance_create(2976, 800, Player_Overworld_Object);break;
+    //case 3: room_goto(Ogre_boss_room_final); global.level = 0; global.boss_beat = false; instance_create(2976, 800, Player_Overworld_Object);break;
     
-    case 4: room_goto(J2_2_Battle_Room); break;
+    //case 4: room_goto(J2_2_Battle_Room); break;
     
     default: break;
 

@@ -60,19 +60,14 @@ global.boss_returned = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.boss_returned)//for regular minions
+            <string>if(room = Fox_boss_room)
 {
-    if (!global.boss_beat)
-    {
-        global.boss_returned = false;
-        alarm[1] = 30;
-    }
-    
-    else
-    {
-        global.boss_beat = false;
-    }
-    
+    game_end();
+}
+
+else
+{
+    instance_activate_object(Next_lvl_stairs_Object);
 }
 </string>
           </argument>
@@ -314,7 +309,42 @@ if(instance_exists(Wall_Object)and(In_Battle==1)){
     else
     {
         global.defeated = false;
-        alarm[4] = 0;
+    }
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.boss_returned)//for regular minions
+{
+    if (!global.boss_beat)
+    {
+        global.boss_returned = false;
+        alarm[1] = 30;
+    }
+    
+    else
+    {
+        global.boss_returned = false;
+        global.boss_beat = false;
+        alarm[4] = 30;
     }
     
 }

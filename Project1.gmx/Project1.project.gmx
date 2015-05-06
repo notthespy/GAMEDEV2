@@ -173,8 +173,8 @@
     <room>rooms\Field_room_1</room>
     <room>rooms\Field_room_2</room>
     <room>rooms\Field_room_3</room>
-    <room>rooms\Field_room_4</room>
     <room>rooms\Fox_boss_room</room>
+    <room>rooms\Field_room_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

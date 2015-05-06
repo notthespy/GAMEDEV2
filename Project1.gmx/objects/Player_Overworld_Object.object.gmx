@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Obj_Xspeed = 5;
-Obj_Yspeed = 5;
+            <string>Obj_Xspeed = 10;
+Obj_Yspeed = 10;
 In_Battle=0;
 Orientation=0;
 Time=0;
@@ -37,10 +37,62 @@ MoveY=0;
 APress=0;
 DPress=0;
 returned = false;
-boss_returned = false;
+global.boss_returned = false;
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.boss_returned)//for regular minions
+{
+    if (!global.boss_beat)
+    {
+        global.boss_returned = false;
+        alarm[1] = 30;
+    }
+    
+    else
+    {
+        global.boss_beat = false;
+    }
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="2" enumb="2">
@@ -61,7 +113,8 @@ boss_returned = false;
           <argument>
             <kind>1</kind>
             <string>global.boss_beat = false;
-//instance_activate_object(Next_lvl_stairs_Object);
+boss_returned = false;
+instance_activate_object(Next_lvl_stairs_Object);
 </string>
           </argument>
         </arguments>
@@ -84,10 +137,9 @@ boss_returned = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room = global.room_to_return_to)
-{
-    instance_create(global.OPlayerX, global.OPlayerY, global.fighting_boss);
-}
+            <string>global.boss_returned = false;
+instance_create(global.OPlayerX, global.OPlayerY, Boss_battle_warp_Object);
+
 </string>
           </argument>
         </arguments>
@@ -144,8 +196,8 @@ y = min(y,room_height)
 y = max(y,0)
 
 if(instance_exists(Wall_Object)and(In_Battle==1)){
-    Obj_Xspeed=5
-    Obj_Yspeed=5
+    Obj_Xspeed=10
+    Obj_Yspeed=10
     In_Battle=0
     visible=true
     x=xprevious
@@ -251,7 +303,7 @@ if(instance_exists(Wall_Object)and(In_Battle==1)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (returned)
+            <string>if (returned)//for regular minions
 {
     if (!global.defeated)
     {
@@ -262,25 +314,9 @@ if(instance_exists(Wall_Object)and(In_Battle==1)){
     else
     {
         global.defeated = false;
+        alarm[4] = 0;
     }
     
-}
-
-if (boss_returned)
-{
-    if(!global.boss_beat)
-    {
-       alarm[1] = 30;
-    }
-    
-    else
-    {
-        global.boss_beat = false;
-        //if (room = Ogre_boss_room_final)
-        //{
-            //instance_activate_object(Next_lvl_stairs_Object);
-        alarm[2] = 20;
-    }
 }
 </string>
           </argument>

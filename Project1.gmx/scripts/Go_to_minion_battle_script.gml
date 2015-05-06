@@ -118,7 +118,7 @@ if(room = Field_room_2)
     }
 }
 
-if(room = Field_room_3 or room = Field_room_4)
+if(room = Field_room_3)
 {
     enemy = irandom_range(0,5)
     switch(enemy)

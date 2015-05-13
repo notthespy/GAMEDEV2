@@ -28,4 +28,5 @@ Jeremy
 	Character Art
 	Enemy/Boss Art
 	Music [I do have some] (not implimented)
+	Enemy Design
 	

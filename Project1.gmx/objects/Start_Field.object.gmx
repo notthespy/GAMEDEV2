@@ -28,8 +28,9 @@
             <string>menu[0] = "LVL 1/Start";
 menu[1] = "LVL 2";
 menu[2] = "LVL 3";
-menu[3] = "Snake battle";
-menu[4] = "Fox battle";
+menu[3] = "Ogre battle";
+menu[4] = "Snake battle";
+menu[5] = "Fox battle";
 
 space = 64;
 mpos = 0;

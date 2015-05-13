@@ -17,6 +17,7 @@ Paul
 	overworld enemy code
 	code for stair and chasm objects
 	code for overworld boss objects
+	Partial implementation of music
 Sebastien
 	Level design (initial schematics)
 	Story and dialogue(full script)
@@ -27,6 +28,6 @@ Jeremy
 	Background Art
 	Character Art
 	Enemy/Boss Art
-	Music [I do have some] (not implemented)
+	Music
 	Enemy Design
 	

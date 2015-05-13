@@ -76,10 +76,6 @@
       <object>objects\Target_room_warp_Object</object>
       <object>objects\Wall_Object</object>
       <object>objects\Rock_object</object>
-      <object>objects\music_in_level_object</object>
-      <object>objects\music_victory_object</object>
-      <object>objects\music_minion_battle_object</object>
-      <object>objects\music_boss_battle_object</object>
       <object>objects\Boss_battle_warp_Object</object>
     </objects>
     <object>objects\Player_Battle_Object</object>

@@ -20,13 +20,13 @@ Paul
 Sebastien
 	Level design (initial schematics)
 	Story and dialogue(full script)
-	Battle quotes(not implimented)
+	Battle quotes(not implemented)
 Jeremy
 	Sprite Animations
 	Final Art
 	Background Art
 	Character Art
 	Enemy/Boss Art
-	Music [I do have some] (not implimented)
+	Music [I do have some] (not implemented)
 	Enemy Design
 	

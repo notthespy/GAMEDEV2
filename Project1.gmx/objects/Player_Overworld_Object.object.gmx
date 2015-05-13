@@ -38,6 +38,7 @@ APress=0;
 DPress=0;
 returned = false;
 global.boss_returned = false;
+audio_play_sound(in_level_music, 0, true);
 </string>
           </argument>
         </arguments>

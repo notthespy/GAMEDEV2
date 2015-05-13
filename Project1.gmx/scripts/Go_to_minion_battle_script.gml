@@ -2,7 +2,8 @@ global.room_to_return_to = room;//room index
 global.fighting_this_monster = object_index;//monster index
 global.OPlayerX = Player_Overworld_Object.xprevious;//players current x
 global.OPlayerY = Player_Overworld_Object.yprevious;//players current y
-
+audio_pause_sound(in_level_music);
+audio_play_sound(minion_battle_theme_music, 0, true)
 instance_destroy();
 
 if(room = Cave_room_1 or room = Cave_room_2)

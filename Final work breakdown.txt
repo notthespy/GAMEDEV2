@@ -3,14 +3,16 @@ Kyoto Exorcist Work Breakdown Document
 Nick
 	All code for battling system
 	Implementation of story into over world
-	Creation of all battle rooms
+	Creation of all battle rooms/all battles
 	Implementation of battle AI
 	Some Temp art
 Paul
-	level construction
+	level construction (in engine)
 	collision detection for over world levels
 	code to warp player to and from levels and battles
-	all scripts
+	all scripts( code to warp player to and from boss and regular enemy battles, run from said battles,
+		random selection based on level for regular enemies, change sprites used based on level 
+		start menu script, wall/rock collision detection, and return from battle scripts)
 	overworld player object code
 	overworld enemy code
 	code for stair and chasm objects
@@ -18,12 +20,12 @@ Paul
 Sebastien
 	Level design (initial schematics)
 	Story and dialogue(full script)
-	Battle quotes
+	Battle quotes(not implimented)
 Jeremy
 	Sprite Animations
 	Final Art
 	Background Art
 	Character Art
 	Enemy/Boss Art
-	Music [I do have some]
+	Music [I do have some] (not implimented)
 	
